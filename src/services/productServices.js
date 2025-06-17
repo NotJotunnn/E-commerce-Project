@@ -26,7 +26,11 @@ class ProductServices {
 
   static async pegarPorId(id) {
     try {
-      return await Database("products").where("id", id).first();
+      const product = await Database("products").where("id", id).first();
+
+      if(!product) throw new Error("Produto não cadastrado.")
+
+      return product
     } catch (err) {
       throw new Error(
         `Não foi possível pegar por id dessa vez: ${err.message}`

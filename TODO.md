@@ -22,3 +22,4 @@
 - Design the Frontend on Figma
 - Implement the Frontend on NextJS
 - Work on Shopping cart addition
+- Add new GET route w/Pagination

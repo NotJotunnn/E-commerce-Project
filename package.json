@@ -1,10 +1,12 @@
 {
   "name": "projetocrudwauth",
   "version": "1.0.0",
-  "main": "./src/index.js",
+  "main": "./server.js",
   "scripts": {
     "dev": "nodemon .",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --forceExit",
+    "test:product:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/productRoutes.test.js --forceExit",
+    "test:product:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/productServices.test.js",
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage",
     "db:up": "docker compose up -d && sleep 1 && npx knex migrate:latest",
     "db:down": "docker compose down",
