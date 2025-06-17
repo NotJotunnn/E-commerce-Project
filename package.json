@@ -1,0 +1,33 @@
+{
+  "name": "projetocrudwauth",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "nodemon .",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage",
+    "db:up": "docker compose up -d && sleep 1 && npx knex migrate:latest",
+    "db:down": "docker compose down",
+    "db:seed": "npx knex seed:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "knex": "^3.1.0",
+    "pg": "^8.16.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.0.0",
+    "eslint": "^9.29.0",
+    "jest": "^30.0.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.1"
+  }
+}
