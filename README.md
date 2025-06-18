@@ -69,11 +69,11 @@ npm run dev           # Start the node server
 
 #### Main product routes:
 
-GET /produtos // List all products
-POST /produtos // Register new product
-GET /produtos/id/:id // Search by Id
-PUT /produtos/id/:id // Update by ID
-DELETE /produtos/id/:id // Remove by ID
+- GET /produtos // List all products
+- POST /produtos // Register new product
+- GET /produtos/id/:id // Search by Id
+- PUT /produtos/id/:id // Update by ID
+- DELETE /produtos/id/:id // Remove by ID
 
 ## 📊 Database Schema
 
@@ -167,11 +167,11 @@ npm run dev           # Inicia servidor Node
 
 #### Rotas principais de produtos:
 
-GET /produtos // Lista todos
-POST /produtos // Cadastra novo
-GET /produtos/id/:id // Busca por ID
-PUT /produtos/id/:id // Atualiza por ID
-DELETE /produtos/id/:id // Remove por ID
+- GET /produtos // Lista todos
+- POST /produtos // Cadastra novo
+- GET /produtos/id/:id // Busca por ID
+- PUT /produtos/id/:id // Atualiza por ID
+- DELETE /produtos/id/:id // Remove por ID
 
 ## 📊 Diagrama
 
