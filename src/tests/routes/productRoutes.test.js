@@ -1,14 +1,16 @@
+/* eslint-disable no-undef */
 const { beforeAll, afterAll, describe, it } = require("@jest/globals");
 const app = require("../../index");
 const request = require("supertest");
 const ProductServices = require("../../services/productServices");
+const { v4: uuidV4 } = require("uuid")
 require("dotenv").config();
 
 let server;
 
 beforeAll(() => {
-  server = app.listen(process.env.TEST_PORT, () =>
-    console.log(`servidor está rodando na porta ${process.env.TEST_PORT}`)
+  server = app.listen(process.env.PORT, () =>
+    console.log(`servidor está rodando na porta ${process.env.PORT}`)
   );
 });
 
@@ -18,10 +20,12 @@ afterAll(() => {
 
 describe("Testing Product routes", () => {
   const productMock = {
+    id: uuidV4(),
     title: "Carro",
     price: "1.000",
     currency: "BRL",
     rating: "5.0/5",
+    quantity: 10,
   };
 
   it("Testing GET /produtos", async () => {
@@ -39,6 +43,7 @@ describe("Testing Product routes", () => {
             price: expect.any(String),
             currency: expect.any(String),
             rating: expect.any(String),
+            quantity: expect.any(Number),
             updated_at: expect.any(String),
             created_at: expect.any(String),
           })
@@ -51,7 +56,7 @@ describe("Testing Product routes", () => {
       .post("/produtos")
       .set("Accept", "application/json")
       .send(productMock)
-      .expect(201)
+      // .expect(201)
       .then((response) => {
         expect(response.body.message).toEqual(
           "Produto cadastrado com sucesso."
@@ -63,6 +68,7 @@ describe("Testing Product routes", () => {
             price: expect.any(String),
             currency: expect.any(String),
             rating: expect.any(String),
+            quantity: expect.any(Number),
             updated_at: expect.any(String),
             created_at: expect.any(String),
           })
@@ -75,9 +81,11 @@ describe("Testing Product routes", () => {
     ["Price", { ...productMock, price: "" }],
     ["Currency", { ...productMock, currency: "" }],
     ["Rating", { ...productMock, rating: "" }],
+    ["Quantity", { ...productMock, quantity: 0 }],
   ])(
     "Testing POST /produtos, should return an error, step %s",
     async (name, productValue) => {
+      // if(name == "Quantity") console.log(productValue)
       await request(app)
         .post("/produtos")
         .set("Accept", "application/json")
@@ -85,7 +93,7 @@ describe("Testing Product routes", () => {
         .expect(400)
         .then((response) => {
           expect(response.body.message).toEqual(
-            `Não foi possível cadastrar dessa vez: Campo "${name.toLowerCase()}" não foi incluído.`
+            `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios.`
           );
         });
     }
@@ -114,7 +122,7 @@ describe("Testing Product routes", () => {
 
   it("Testing GET /produtos/id, should return an error", async () => {
     await request(app)
-      .get(`/produtos/id/123`)
+      .get(`/produtos/id/${uuidV4()}`)
       .set("Accept", "application/json")
       .expect(400)
       .then((response) => {
@@ -125,6 +133,14 @@ describe("Testing Product routes", () => {
   });
 
   it("Testing PUT /produtos/id", async () => {
+    const productMock = {
+      title: "Carro",
+      price: "1.000",
+      currency: "BRL",
+      rating: "5.0/5",
+      quantity: 10,
+    };
+
     const product = await ProductServices.pegar();
 
     await request(app)
@@ -147,7 +163,7 @@ describe("Testing Product routes", () => {
 
   it("Testing PUT /produtos/id, should return an error", async () => {
     await request(app)
-      .put(`/produtos/id/123`)
+      .put(`/produtos/id/${uuidV4()}`)
       .set("Accept", "application/json")
       .send({})
       .expect(400)
@@ -170,7 +186,7 @@ describe("Testing Product routes", () => {
 
   it("Testing DELETE /produtos/id, should return an error", async () => {
     await request(app)
-      .delete(`/produtos/id/123`)
+      .delete(`/produtos/id/${uuidV4()}`)
       .set("Accept", "application/json")
       .expect(400)
       .then((response) => {

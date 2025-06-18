@@ -1,16 +1,31 @@
 const Database = require("../Knex/database");
-const Product = require("../models/Products");
 
 class ProductServices {
   static async cadastrar(dto) {
     try {
-      const { title, price, currency, rating } = dto;
+      if (
+        !dto ||
+        !dto.id ||
+        !dto.title ||
+        !dto.price ||
+        !dto.currency ||
+        !dto.rating ||
+        dto.quantity == 0
+      ) {
+        throw new Error(
+          "Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios."
+        );
+      }
 
-      const newProduct = new Product(title, price, currency, rating);
+      const productAlreadyExists = await Database("products")
+        .where("id", dto.id)
+        .first();
 
-      await Database("products").insert(newProduct);
+      if (productAlreadyExists) throw new Error("Produto já cadastrado.");
 
-      return await Database("products").where("id", newProduct.id).first();
+      await Database("products").insert(dto);
+
+      return await Database("products").where("id", dto.id).first();
     } catch (err) {
       throw new Error(`Não foi possível cadastrar dessa vez: ${err.message}`);
     }
@@ -28,9 +43,9 @@ class ProductServices {
     try {
       const product = await Database("products").where("id", id).first();
 
-      if(!product) throw new Error("Produto não cadastrado.")
+      if (!product) throw new Error("Produto não cadastrado.");
 
-      return product
+      return product;
     } catch (err) {
       throw new Error(
         `Não foi possível pegar por id dessa vez: ${err.message}`
@@ -48,7 +63,7 @@ class ProductServices {
         .where("id", id)
         .update({ ...dto });
 
-      return await Database("products").where("id", id).first();
+      return await { ...productExist[0], ...dto };
     } catch (err) {
       throw new Error(`Não foi possível atualizar dessa vez: ${err.message}`);
     }

@@ -4,11 +4,12 @@
  */
 exports.up = function (knex) {
   return knex.schema.createTable("products", (table) => {
-    table.string("id").primary();
+    table.uuid("id").primary();
     table.string("title").notNullable();
     table.string("price").notNullable();
     table.string("currency").notNullable();
     table.string("rating").notNullable();
+    table.integer("quantity").notNullable();
     table.timestamps(true, true);
   });
 };

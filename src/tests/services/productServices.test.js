@@ -1,6 +1,7 @@
-const { describe, it, expect, afterEach } = require("@jest/globals");
+const { describe, it, expect, afterAll } = require("@jest/globals");
 const ProductServices = require("../../services/productServices");
 const Database = require("../../Knex/database");
+const { v4: uuidV4 } = require("uuid")
 
 afterAll(() => {
   Database.destroy();
@@ -8,10 +9,12 @@ afterAll(() => {
 
 describe("Testing productServices class.", () => {
   const debugProduct = {
+    id: uuidV4(),
     title: "Carro",
     price: "1.000",
     currency: "BRL",
     rating: "5.0/5",
+    quantity: 10,
   };
 
   it("Testing cadastrar method, should return a new product object", async () => {
@@ -32,13 +35,14 @@ describe("Testing productServices class.", () => {
     ["price", { ...debugProduct, price: "" }],
     ["currency", { ...debugProduct, currency: "" }],
     ["rating", { ...debugProduct, rating: "" }],
+    ["quantity", { ...debugProduct, quantity: 0 }],
   ])(
     "Testing cadastrar method lacking %s parameter, should return an error",
     async (name, product) => {
       const newProduct = ProductServices.cadastrar(product);
 
       await expect(newProduct).rejects.toThrow(
-        `Não foi possível cadastrar dessa vez: Campo "${name}" não foi incluído.`
+        `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios.`
       );
     }
   );
@@ -54,6 +58,7 @@ describe("Testing productServices class.", () => {
         price: expect.any(String),
         currency: expect.any(String),
         rating: expect.any(String),
+        quantity: expect.any(Number),
         created_at: expect.any(Date),
         updated_at: expect.any(Date),
       })
@@ -72,6 +77,7 @@ describe("Testing productServices class.", () => {
         price: expect.any(String),
         currency: expect.any(String),
         rating: expect.any(String),
+        quantity: expect.any(Number),
         created_at: expect.any(Date),
         updated_at: expect.any(Date),
       })
@@ -83,16 +89,21 @@ describe("Testing productServices class.", () => {
     ["price", { price: "2.000" }],
     ["currency", { currency: "USD" }],
     ["rating", { rating: "0.0/5" }],
+    ["quantity", { quantity: 0 }],
   ])(
     "Testing atualizar method, should return an updated object with updated %s parameter.",
     async (name, updatedProductValues) => {
       const products = await ProductServices.pegar();
 
-      const product = await ProductServices.pegarPorId(
-        products[products.length - 1].id
+      const { id, title, price, currency, rating, quantity } = await ProductServices.pegarPorId(
+        products[0].id
       );
 
-      const updatedProduct = await ProductServices.atualizar(product.id, {
+      const product = {
+        title, price, currency, rating, quantity
+      }
+
+      const updatedProduct = await ProductServices.atualizar(id, {
         ...product,
         ...updatedProductValues,
       });
@@ -101,6 +112,8 @@ describe("Testing productServices class.", () => {
         expect.objectContaining({
           ...product,
           ...updatedProductValues,
+          created_at: expect.any(Date),
+          updated_at: expect.any(Date),
         })
       );
       expect(updatedProduct).not.toStrictEqual(product);
@@ -110,7 +123,7 @@ describe("Testing productServices class.", () => {
   it("Testing atualizar method, should return an error.", async () => {
     const products = await ProductServices.pegar();
 
-    const updatedProduct = ProductServices.atualizar("123", {
+    const updatedProduct = ProductServices.atualizar(uuidV4(), {
       ...products[0],
       title: "Carro2",
     });
@@ -124,14 +137,14 @@ describe("Testing productServices class.", () => {
     const products = await ProductServices.pegar();
 
     const product = await ProductServices.deletar(
-      products[products.length - 1].id
+      products[0].id
     );
 
     expect(product).toEqual("Produto deletado com sucesso.");
   });
 
   it("Testing deletar method, should return an error", async () => {
-    const product = ProductServices.deletar("123");
+    const product = ProductServices.deletar(uuidV4());
 
     await expect(product).rejects.toThrow(
       "Não foi possível deletar dessa vez: Produto não cadastrado."

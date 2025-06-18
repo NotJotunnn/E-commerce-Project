@@ -2,14 +2,16 @@ const ProductServices = require("../services/productServices");
 
 class ProductController {
   static async cadastrarProduto(req, res) {
-    const { title, price, currency, rating } = req.body;
+    const { id, title, price, currency, rating, quantity } = req.body;
 
     try {
       const product = await ProductServices.cadastrar({
+        id,
         title,
         price,
         currency,
         rating,
+        quantity,
       });
 
       res
