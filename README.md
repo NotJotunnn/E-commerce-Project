@@ -18,7 +18,7 @@ A complete implementation of an audio equipment marketplace with:
 | ---------------- | ----------------- |
 | API Framework    | Node.js + Express |
 | Database ORM     | Knex.js           |
-| Testing          | Jest              |
+| Testing          | Jest + Supertest  |
 | Containerization | Docker            |
 | Banco de dados   | Postgres          |
 
@@ -65,9 +65,9 @@ npm run dev           # Start the node server
 | PostgreSQL | 5432 | Database                     |
 | Frontend   | 3000 | Next.js App (in development) |
 
-### 📊 Rotas da API
+### 📊 API routes
 
-#### Rotas principais de produtos:
+#### Main product routes:
 
 GET /produtos // List all products
 POST /produtos // Register new product
@@ -77,7 +77,10 @@ DELETE /produtos/id/:id // Remove by ID
 
 ## 📊 Database Schema
 
-- TODO!
+<p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+  <img style="width: 500px;" src="images/image.png" alt="An image of the diagram for the database"/>
+  <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Not completely implemented</p>
+</p>
 
 ## 📝 Developer Note
 
@@ -113,7 +116,7 @@ Implementação completa de um marketplace de equipamentos de áudio com:
 | --------------- | ----------------- |
 | Framework API   | Node.js + Express |
 | ORM de Banco    | Knex.js           |
-| Testes          | Jest              |
+| Testes          | Jest + Supertest  |
 | Containerização | Docker            |
 | Banco de dados  | Postgres          |
 
@@ -169,6 +172,13 @@ POST /produtos // Cadastra novo
 GET /produtos/id/:id // Busca por ID
 PUT /produtos/id/:id // Atualiza por ID
 DELETE /produtos/id/:id // Remove por ID
+
+## 📊 Diagrama
+
+<p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
+  <img style="width: 500px;" src="images/image.png" alt="Uma imagem do diagrama do banco de dados"/>
+  <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Não completamente implementado</p>
+</p>
 
 ## 📝 Nota do Desenvolvedor
 
