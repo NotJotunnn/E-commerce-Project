@@ -10,9 +10,12 @@ exports.up = function (knex) {
     table.string("currency").notNullable();
     table.string("rating").notNullable();
     table.integer("quantity").notNullable();
+    table.boolean("availability").notNullable();
     table.timestamps(true, true);
   });
 };
+
+// TODO Add availability to every other space
 
 /**
  * @param { import("knex").Knex } knex

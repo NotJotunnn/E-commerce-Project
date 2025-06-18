@@ -9,22 +9,28 @@
 
 ## For tomorrow (18/06)
 
-- Update fictional company name
 - ✅ Start implementing migrations for users, permissions, user_permissions
-- Implement basic CRUD for users, permissions, user_permissions
-- Impede duplicates from happening on users, products n permissions, user_permissions
+- ✅ Implement basic CRUD for users, permissions, user_permissions
+- 🟨 Impede duplicates from happening on users, products n permissions, user_permissions
+- ✅ Add Database Schema/Diagram
+- 🟨 Add new GET products route w/Pagination
+
+## For the day after (19/06)
+
+- 🟨 Impede duplicates from happening on users, products n permissions, user_permissions
+- Test stuff out
 - Start working on authentication
 - Start working on middlewares
-- ✅ Add Database Schema/Diagram
+- Update fictional company name
+- Implement global purchase history
 
 ## For the future
 
-- Implement global purchase history
+- 🟨 Add new GET products route w/Pagination
 - Design the Frontend on Figma
 - Work on Shopping cart addition
 - Implement the Frontend on NextJS
 - Start working on OAuth 2.0
-- Add new GET products route w/Pagination
 
 - Study more testing via Dockerfile
 - Implement GitHub Workflows for:

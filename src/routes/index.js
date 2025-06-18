@@ -1,15 +1,9 @@
-const bodyParser = require("body-parser")
-const products = require("./productRoutes")
-const users = require("./userRoute")
-const permissions = require("./permissionRoutes")
+const bodyParser = require("body-parser");
+const products = require("./productRoutes");
+const users = require("./userRoutes");
+const permissions = require("./permissionRoutes");
+const userPermissions = require("./userPermissionsRoutes");
 
-// TODO rota user_permissions
-
-module.exports = app => {
-  app.use(
-    bodyParser.json(),
-    products,
-    users,
-    permissions,
-  )
-}
+module.exports = (app) => {
+  app.use(bodyParser.json(), products, users, permissions, userPermissions);
+};

@@ -22,7 +22,7 @@ class ProductController {
     }
   }
 
-  static async pegarProdutos(req, res) {
+  static async pegarProdutos(_, res) {
     try {
       const products = await ProductServices.pegar();
 
@@ -31,6 +31,38 @@ class ProductController {
         .send({ message: "Produtos pegos com sucesso.", data: products });
     } catch (err) {
       res.status(400).send({ message: err.message, data: {} });
+    }
+  }
+
+  static async pegarPaginado(req, res) {
+    const { limit = 30, page = 1 } = req.query;
+
+    const resultsLimit = Math.min(parseInt(limit), 80);
+    const pageCounter = Math.max(parseInt(page), 1);
+
+    try {
+      const products = await ProductServices.pegarPaginado(
+        resultsLimit,
+        pageCounter
+      );
+
+      res
+        .status(200)
+        .send({
+          message: "Resultados pegos com sucesso.",
+          page: pageCounter,
+          limit: resultsLimit,
+          data: products,
+        });
+    } catch (err) {
+      res
+        .status(400)
+        .send({
+          message: err.message,
+          page: pageCounter,
+          limit: resultsLimit,
+          data: {},
+        });
     }
   }
 
@@ -54,12 +86,10 @@ class ProductController {
     try {
       const updatedProduct = await ProductServices.atualizar(id, req.body);
 
-      res
-        .status(200)
-        .send({
-          message: "Produto atualizado com sucesso",
-          data: updatedProduct,
-        });
+      res.status(200).send({
+        message: "Produto atualizado com sucesso",
+        data: updatedProduct,
+      });
     } catch (err) {
       res.status(400).send({ message: err.message, data: {} });
     }

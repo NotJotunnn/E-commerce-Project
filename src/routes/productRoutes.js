@@ -4,7 +4,7 @@ const ProductController = require("../controllers/productController");
 const router = Router();
 
 router
-  .get("/produtos", ProductController.pegarProdutos)
+  .get("/produtos", ProductController.pegarPaginado)
   .post("/produtos", ProductController.cadastrarProduto)
   .get("/produtos/id/:id", ProductController.pegarProdutoPorId)
   .put("/produtos/id/:id", ProductController.atualizarProduto)

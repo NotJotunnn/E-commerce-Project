@@ -39,6 +39,19 @@ class ProductServices {
     }
   }
 
+  static async pegarPaginado(resultsLimit, pageCounter) {
+    try {
+      if(!resultsLimit) 
+        throw new Error("Limite de resultados não declarado.")
+      if(!pageCounter)
+        throw new Error("Página não declarada.")
+
+      return await Database("products").limit(resultsLimit).offset(resultsLimit * (pageCounter - 1))
+    } catch (err) {
+      throw new Error(`Não foi possível retornar os produtos paginados: ${err.message}`)
+    }
+  }
+
   static async pegarPorId(id) {
     try {
       const product = await Database("products").where("id", id).first();
