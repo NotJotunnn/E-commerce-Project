@@ -7,8 +7,8 @@ router
   .get("/usuario-permissao", UserPermissionController.pegarPermissoes)
   .post("/usuario-permissao", UserPermissionController.cadastrarPermissao)
   .post("/usuario-permissao/batch", UserPermissionController.cadastrarPermissaoBatch)
-  .get("/usuario-permissao/id:id", UserPermissionController.pegarPermissaoPorId)
-  .put("/usuario-permissao/id:id", UserPermissionController.atualizarPermissao)
-  .delete("/usuario-permissao/id:id", UserPermissionController.deletarPermissao)
+  .get("/usuario-permissao/id/:id", UserPermissionController.pegarPermissaoPorId)
+  .put("/usuario-permissao/user_id/:user_id/permission_id/:permission_id", UserPermissionController.atualizarPermissao)
+  .delete("/usuario-permissao/user_id/:user_id/permission_id/:permission_id", UserPermissionController.deletarPermissao)
 
 module.exports = router

@@ -69,11 +69,65 @@ npm run dev           # Start the node server
 
 #### Main product routes:
 
-- GET /produtos // List all products
+- GET /produtos?limit=30&page=1 // List all products (paginated)
+  // Default values:
+  // - limit 30 (limits results per page, can go up to 80)
+  // - page 1
 - POST /produtos // Register new product
-- GET /produtos/id/:id // Search by Id
-- PUT /produtos/id/:id // Update by ID
-- DELETE /produtos/id/:id // Remove by ID
+- GET /produtos/id/:id // Search product by id
+- PUT /produtos/id/:id // Update product by id
+- DELETE /produtos/id/:id // Remove product by id
+
+##### Dados _necessários_ para POST
+
+- title // Product title // String (Cannot have duplicates)
+- price // Product price // String (Cannot have symbols or letters like $ or R$)
+- currency // Products currency // String (Accepts BRL - Brazilian real, USD - US Dollar, CAD - Canadian Dollar)
+- rating // Products rating // String (Accepts 5.0/5)
+- quantity // Products quantity // Number
+- availability // Products availability // Boolean
+
+#### Main user routes:
+
+- GET /usuario // List all users
+- POST /usuario // Register new user
+- GET /usuario/id/:id // Search user by id
+- PUT /usuario/id/:id // Update user by id
+- DELETE /usuario/id/:id // Remove user by id
+
+##### Dados _necessários_ para POST
+
+- name // User name // String
+- hash // User password (hashed) // String
+- email // User email // String (Cannot have duplicates)
+- phone_number // User phone number // String
+
+#### Main permission routes:
+
+- GET /permissao // List all permissions
+- POST /permissao // Register new permission
+- GET /permissao/id/:id // Search permission by id
+- PUT /permissao/id/:id // Update permission by id
+- DELETE /permissao/id/:id // Remove permission by id
+
+##### Dados _necessários_ para POST
+
+- name // Permission name // String
+- description // Permission desription // String
+
+#### Main user_permission routes:
+
+- GET /usuario-permissao // List all global users permissions
+- POST /usuario-permissao // Register new permission for a user
+- POST /usuario-permissao/batch // Register new permissions in batch for a user id
+- GET /usuario-permissao/id/:id // Search permission by user id
+- PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Update permission by user id
+- DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permission by user id
+
+##### Dados _necessários_ para POST
+
+- user_id // User id // UUID
+- permission_id // Permission id // UUID
 
 ## 📊 Database Schema
 
@@ -167,11 +221,65 @@ npm run dev           # Inicia servidor Node
 
 #### Rotas principais de produtos:
 
-- GET /produtos // Lista todos
-- POST /produtos // Cadastra novo
-- GET /produtos/id/:id // Busca por ID
-- PUT /produtos/id/:id // Atualiza por ID
-- DELETE /produtos/id/:id // Remove por ID
+- GET /produtos?limit=30&page=1 // Lista todos os produtos (paginado)
+  // Valores padrões:
+  // - limit 30 (limita resultados por página, pode ir até 80)
+  // - page 1
+- POST /produtos // Cadastra novo produto
+- GET /produtos/id/:id // Busca produto por id
+- PUT /produtos/id/:id // Atualiza produto por id
+- DELETE /produtos/id/:id // Remove produto por id
+
+##### Dados _necessários_ para POST
+
+- title // título do produto // String (Não pode haver duplicatas)
+- price // preço do produto // String (Sem sinais ou letras como $, R$ ou equivalente)
+- currency // moeda usada no produto // String (Aceita BRL - Brazilian real, USD - US Dollar, CAD - Canadian Dollar)
+- rating // avaliação do produto // String (Aceita 5.0/5)
+- quantity // quantidade do produto // Number
+- availability // disponibilidade do produto // Boolean
+
+#### Rotas principais de usuário:
+
+- GET /usuario // Lista todos os usuários
+- POST /usuario // Registra novo usuário
+- GET /usuario/id/:id // Procura usuário por id
+- PUT /usuario/id/:id // Atualiza usuário por id
+- DELETE /usuario/id/:id // Deleta usuário por id
+
+##### Dados _necessários_ para POST
+
+- name // nome do usuário // String
+- hash // senha do usuário (hasheada) // String
+- email // email do usuário // String (Não pode haver duplicatas)
+- phone_number // número do usuário // String
+
+#### Main permission routes:
+
+- GET /permissao // Lista todas as permissões
+- POST /permissao // Registra nova permissão
+- GET /permissao/id/:id // Procura permissão por id
+- PUT /permissao/id/:id // Atualiza permissão por id
+- DELETE /permissao/id/:id // Remove permissão por id
+
+##### Dados _necessários_ para POST
+
+- name // nome da permissão // String
+- description // descrição da permissão // String
+
+#### Main user_permission routes:
+
+- GET /usuario-permissao // Lista todas as permissões de usuários globais
+- POST /usuario-permissao // Registra nova permissão pro usuário
+- POST /usuario-permissao/batch // Registra permissões em lote para um usuário
+- GET /usuario-permissao/id/:id // Procura por permissões por id de usuário
+- PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Atualiza permissão por id de usuário
+- DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permissão por id de usuário
+
+##### Dados _necessários_ para POST
+
+- user_id // id do usuário // UUID
+- permission_id // id da permissão // UUID
 
 ## 📊 Diagrama
 

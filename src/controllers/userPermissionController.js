@@ -55,7 +55,7 @@ class UserPermissionController {
   }
 
   static async pegarPermissaoPorId(req, res) {
-    const { id } = req.body;
+    const { id } = req.params;
 
     try {
       const permission = await UserPermissionService.pegarPorId(id);
@@ -69,7 +69,7 @@ class UserPermissionController {
   }
 
   static async atualizarPermissao(req, res) {
-    const { user_id, permission_id } = req.body;
+    const { user_id, permission_id } = req.params;
 
     try {
       const updatedPermission = await UserPermissionService.atualizar(
@@ -89,7 +89,7 @@ class UserPermissionController {
   }
 
   static async deletarPermissao(req, res) {
-    const { user_id, permission_id } = req.body;
+    const { user_id, permission_id } = req.params;
 
     try {
       await UserPermissionService.deletar({ user_id, permission_id });

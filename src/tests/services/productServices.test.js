@@ -1,4 +1,4 @@
-const { describe, it, expect, afterAll } = require("@jest/globals");
+const { describe, it, expect, afterAll, beforeAll } = require("@jest/globals");
 const ProductServices = require("../../services/productServices");
 const Database = require("../../Knex/database");
 const { v4: uuidV4 } = require("uuid")
@@ -7,14 +7,22 @@ afterAll(() => {
   Database.destroy();
 });
 
+beforeAll(async () => {
+  const mockData = await ProductServices.pegarPorTitle("Carro5")
+
+  for(const mockItem of mockData) {
+    await ProductServices.deletar(mockItem.id)
+  }
+}, 5000)
+
 describe("Testing productServices class.", () => {
   const debugProduct = {
-    id: uuidV4(),
-    title: "Carro",
+    title: "Carro5",
     price: "1.000",
     currency: "BRL",
     rating: "5.0/5",
     quantity: 10,
+    availability: true,
   };
 
   it("Testing cadastrar method, should return a new product object", async () => {
@@ -36,13 +44,14 @@ describe("Testing productServices class.", () => {
     ["currency", { ...debugProduct, currency: "" }],
     ["rating", { ...debugProduct, rating: "" }],
     ["quantity", { ...debugProduct, quantity: 0 }],
+    ["availability", { ...debugProduct, availability: null }],
   ])(
     "Testing cadastrar method lacking %s parameter, should return an error",
     async (name, product) => {
       const newProduct = ProductServices.cadastrar(product);
 
       await expect(newProduct).rejects.toThrow(
-        `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios.`
+        `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity', 'availability' não podem estar vazios.`
       );
     }
   );
@@ -59,6 +68,7 @@ describe("Testing productServices class.", () => {
         currency: expect.any(String),
         rating: expect.any(String),
         quantity: expect.any(Number),
+        availability: expect.any(Boolean),
         created_at: expect.any(Date),
         updated_at: expect.any(Date),
       })
@@ -78,6 +88,7 @@ describe("Testing productServices class.", () => {
         currency: expect.any(String),
         rating: expect.any(String),
         quantity: expect.any(Number),
+        availability: expect.any(Boolean),
         created_at: expect.any(Date),
         updated_at: expect.any(Date),
       })
@@ -90,17 +101,18 @@ describe("Testing productServices class.", () => {
     ["currency", { currency: "USD" }],
     ["rating", { rating: "0.0/5" }],
     ["quantity", { quantity: 0 }],
+    ["availability", { availability: false }],
   ])(
     "Testing atualizar method, should return an updated object with updated %s parameter.",
     async (name, updatedProductValues) => {
       const products = await ProductServices.pegar();
 
-      const { id, title, price, currency, rating, quantity } = await ProductServices.pegarPorId(
+      const { id, title, price, currency, rating, quantity, availability } = await ProductServices.pegarPorId(
         products[0].id
       );
 
       const product = {
-        title, price, currency, rating, quantity
+        title, price, currency, rating, quantity, availability
       }
 
       const updatedProduct = await ProductServices.atualizar(id, {

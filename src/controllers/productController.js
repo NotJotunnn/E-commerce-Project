@@ -2,16 +2,16 @@ const ProductServices = require("../services/productServices");
 
 class ProductController {
   static async cadastrarProduto(req, res) {
-    const { id, title, price, currency, rating, quantity } = req.body;
+    const { title, price, currency, rating, quantity, availability } = req.body;
 
     try {
       const product = await ProductServices.cadastrar({
-        id,
         title,
         price,
         currency,
         rating,
         quantity,
+        availability,
       });
 
       res
@@ -39,6 +39,7 @@ class ProductController {
 
     const resultsLimit = Math.min(parseInt(limit), 80);
     const pageCounter = Math.max(parseInt(page), 1);
+    const amountOfPages = await ProductServices.pegar()
 
     try {
       const products = await ProductServices.pegarPaginado(
@@ -49,9 +50,10 @@ class ProductController {
       res
         .status(200)
         .send({
-          message: "Resultados pegos com sucesso.",
+          message: "Produtos pegos com sucesso.",
           page: pageCounter,
           limit: resultsLimit,
+          total: Math.round(amountOfPages.length / resultsLimit),
           data: products,
         });
     } catch (err) {
@@ -61,6 +63,7 @@ class ProductController {
           message: err.message,
           page: pageCounter,
           limit: resultsLimit,
+          total: 0,
           data: {},
         });
     }

@@ -5,7 +5,8 @@
     "price": "1.051.58",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "b7d5758f-6414-40d9-80b4-7fe34f4eb693",
@@ -13,7 +14,8 @@
     "price": "798.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "6e4f9ef6-9536-4dde-9b9a-c36099370ec0",
@@ -21,7 +23,8 @@
     "price": "5.873.00",
     "currency": "BRL",
     "rating": "4.9/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "59b0195f-0da5-473e-8e2a-5ce4433b4f66",
@@ -29,7 +32,8 @@
     "price": "425.99",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "633147c9-89f1-4f7c-b802-38b3d4d358e0",
@@ -37,7 +41,8 @@
     "price": "999.99",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "615b0226-0a4b-4ed8-84b9-25ec07de82fb",
@@ -45,7 +50,8 @@
     "price": "99.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "b53ed081-b9a4-4d82-98f5-ebe31bfa3b15",
@@ -53,7 +59,8 @@
     "price": "151.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "83be5240-7527-4538-b37f-81b949c5af44",
@@ -61,7 +68,8 @@
     "price": "798.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "74ec3dab-af27-4719-a4cf-f8c421ae0ec4",
@@ -69,7 +77,8 @@
     "price": "110.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "edbbce91-08e5-4e82-aaf5-20daf692e8c8",
@@ -77,7 +86,8 @@
     "price": "610.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "920a4512-1e62-45a3-87b3-d1d2bd8f96d0",
@@ -85,7 +95,8 @@
     "price": "1.051.58",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "62738299-ce6e-4941-b8a6-aa2d0f8c7540",
@@ -93,7 +104,8 @@
     "price": "239.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "a433decf-44c0-4795-a0c0-f176fb58a988",
@@ -101,7 +113,8 @@
     "price": "29.10",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "03bb6162-3c58-413b-aa49-949862c50396",
@@ -109,7 +122,8 @@
     "price": "272.31",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "9f64fb59-590a-4e6c-9352-4420a3e6fa05",
@@ -117,7 +131,8 @@
     "price": "120.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "fc99b1af-4ba2-48d7-bdad-8602947a6dda",
@@ -125,7 +140,8 @@
     "price": "332.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "a9824f99-3121-47dc-897f-9c3ad9a549b0",
@@ -133,7 +149,8 @@
     "price": "702.86",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "9574318b-89fc-4d83-acbd-d41b72b0942c",
@@ -141,7 +158,8 @@
     "price": "320.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "bb6d493a-9706-477c-9702-0f93eedffce2",
@@ -149,7 +167,8 @@
     "price": "345.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "b647ffed-5b42-4827-9e63-9685234280bd",
@@ -157,7 +176,8 @@
     "price": "343.78",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "07f14b54-7caf-4782-9271-f49eb9557524",
@@ -165,7 +185,8 @@
     "price": "309.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "025270b7-72f7-4d48-bcb7-db68974661e6",
@@ -173,7 +194,8 @@
     "price": "89.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "06562a45-cb8f-4c24-b0f2-ff537003137a",
@@ -181,7 +203,8 @@
     "price": "125.99",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "bdba3e2d-ad68-4230-a6f9-72e53064f4b8",
@@ -189,7 +212,8 @@
     "price": "399.99",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "b7300eee-9405-4c25-b4f9-6922a61d263a",
@@ -197,7 +221,8 @@
     "price": "660.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "8d756565-1531-4a2d-bf79-1b00878f641e",
@@ -205,7 +230,8 @@
     "price": "404.10",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "a11497ca-d551-4a4d-8b39-17f91342c3c0",
@@ -213,7 +239,8 @@
     "price": "164.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "dd9fa58a-ca6f-4860-812d-fb5bd4b7f7db",
@@ -221,7 +248,8 @@
     "price": "999.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "4c5c4f63-1d8f-483e-9eb3-8fced71a7aa4",
@@ -229,7 +257,8 @@
     "price": "1.447.48",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "b89ad8ff-8aaa-434b-81b2-d796737b3679",
@@ -237,7 +266,8 @@
     "price": "467.50",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "df365a0e-d9e2-409b-bc71-ba5aeb362361",
@@ -245,7 +275,8 @@
     "price": "159.99",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "817f45bd-ec71-45f2-b112-0b3fccef5d46",
@@ -253,7 +284,8 @@
     "price": "200.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "982ed643-c5d0-40a3-bbeb-b36fab3a35aa",
@@ -261,7 +293,8 @@
     "price": "1.077.03",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "ead7133f-5610-40c1-a0a2-a0309f025437",
@@ -269,7 +302,8 @@
     "price": "390.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "047f644e-38d7-4a47-a3a1-a402ec0835db",
@@ -277,7 +311,8 @@
     "price": "449.09",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "a7678145-8899-405a-877f-815c3b671e20",
@@ -285,7 +320,8 @@
     "price": "768.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "99c8c30f-0ee7-4c07-8e68-0067cc3498a5",
@@ -293,7 +329,8 @@
     "price": "134.10",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "dbe8c010-8761-4ee0-9934-fb89ebe7e0cf",
@@ -301,7 +338,8 @@
     "price": "1.549.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "0ecdf7b5-3223-41b3-a7fb-ddeb7af57fa4",
@@ -309,7 +347,8 @@
     "price": "251.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "2803ac47-0775-4cb2-8eb3-718c438bc9d9",
@@ -317,7 +356,8 @@
     "price": "777.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "e71032a2-bcee-41b1-aaff-b7a681cace2d",
@@ -325,7 +365,8 @@
     "price": "170.00",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "c3eb63f1-ee6c-4049-837e-8f1c4e44bacf",
@@ -333,7 +374,8 @@
     "price": "975.90",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "5b3c4d40-ea3f-48fd-813d-7f3abbb66481",
@@ -341,7 +383,8 @@
     "price": "230.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "bff092ba-9131-4d05-b6fd-fb1db5d35c4e",
@@ -349,7 +392,8 @@
     "price": "1.099.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "10e3f948-9391-4539-8588-395838b43797",
@@ -357,7 +401,8 @@
     "price": "189.92",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "090eb02c-2169-4bf5-bc4c-3c63f6f8d626",
@@ -365,7 +410,8 @@
     "price": "1.999.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "6f680166-fea4-43c8-b7ca-f0396e2d0775",
@@ -373,7 +419,8 @@
     "price": "2.589.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "d58c7c14-c29b-4bfe-beef-b91c4e5dff4f",
@@ -381,7 +428,8 @@
     "price": "388.00",
     "currency": "BRL",
     "rating": "3.8/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "94bccec0-e69e-4fec-9fa6-2224995afa5b",
@@ -389,7 +437,8 @@
     "price": "649.99",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "f0ceb2d6-5f68-4715-84cd-ad5c77b925ed",
@@ -397,7 +446,8 @@
     "price": "280.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "34b772ae-0ce0-4473-ae88-b57d0ecbab2c",
@@ -405,7 +455,8 @@
     "price": "599.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "e515e444-3ecb-4b5c-983a-05776aee711f",
@@ -413,7 +464,8 @@
     "price": "659.90",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "b86dc9a8-f2cd-4ecd-b7ff-a61e79145098",
@@ -421,7 +473,8 @@
     "price": "69.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "fc1f0d01-1946-4523-85ac-6d97ea0dba5b",
@@ -429,7 +482,8 @@
     "price": "200.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "f993bc46-514a-4aa1-b269-e4c55de93a82",
@@ -437,7 +491,8 @@
     "price": "1.679.20",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "ed7ce18f-28aa-4ba7-b633-a0cd0bf31d55",
@@ -445,7 +500,8 @@
     "price": "1.899.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "9a0faa36-54ca-41cb-be52-9cb68ac6cd79",
@@ -453,7 +509,8 @@
     "price": "1.699.90",
     "currency": "BRL",
     "rating": "4.9/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "40525516-acaf-49e5-a885-843aba0b8382",
@@ -461,7 +518,8 @@
     "price": "99.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "cad666a4-5f44-4522-8b43-8025e7ed216e",
@@ -469,7 +527,8 @@
     "price": "110.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "34ec817f-ba38-4e31-b5ee-cbbda1ed612b",
@@ -477,7 +536,8 @@
     "price": "120.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "54d64a01-a974-45fc-9dda-93c040637a6f",
@@ -485,7 +545,8 @@
     "price": "1.679.20",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "fcbabaaf-8081-4e06-9584-ffe099a7ba92",
@@ -493,7 +554,8 @@
     "price": "798.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "41e56f0f-a258-41de-bb82-239896b9484c",
@@ -501,7 +563,8 @@
     "price": "1.599.99",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "5a4cf268-2609-49c1-9a7c-2d78454784e6",
@@ -509,7 +572,8 @@
     "price": "1.284.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "9061e77e-e4a1-4bcb-ad98-5636f240934d",
@@ -517,7 +581,8 @@
     "price": "240.00",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "0c17a6aa-3cd2-4f96-a706-0ae14f81b791",
@@ -525,7 +590,8 @@
     "price": "530.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "237458fe-55ac-46f1-b720-0cd76a15f3fa",
@@ -533,7 +599,8 @@
     "price": "1.999.90",
     "currency": "BRL",
     "rating": "4.9/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "17a5fbbb-8910-4b02-aa99-eb7eefb3918b",
@@ -541,7 +608,8 @@
     "price": "599.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "29480059-8465-48a7-9b1c-db392b4f0c88",
@@ -549,7 +617,8 @@
     "price": "741.10",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "1089aa13-f61f-499d-9637-7091ca041fc6",
@@ -557,7 +626,8 @@
     "price": "529.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "b939ad89-5108-4512-979c-eb694a86b4c4",
@@ -565,7 +635,8 @@
     "price": "170.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "52ffd0d7-a883-4cde-8f4a-c2ee571977e0",
@@ -573,7 +644,8 @@
     "price": "419.90",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "bb736ac3-ec50-461b-badd-a85ada35c5c0",
@@ -581,7 +653,8 @@
     "price": "290.00",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "26bd1afa-8012-4e22-9cce-7b4ab791a72a",
@@ -589,7 +662,8 @@
     "price": "419.90",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "99f37948-71b5-4af6-99a2-ae1622761ac6",
@@ -597,7 +671,8 @@
     "price": "197.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "2dce07c3-7945-4bb0-a7ed-ac4b5a5a4643",
@@ -605,7 +680,8 @@
     "price": "260.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "705281a1-3b84-4b0e-9084-5dca901aba46",
@@ -613,7 +689,8 @@
     "price": "309.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "65a55c79-9b9e-4ff7-b88c-03d2fa2b1b5f",
@@ -621,7 +698,8 @@
     "price": "1.899.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "47c8d76f-6acd-4a9f-bbbb-7fcf46d44b7f",
@@ -629,7 +707,8 @@
     "price": "99.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "79f21787-e69c-453a-be31-0befff0be84f",
@@ -637,7 +716,8 @@
     "price": "425.99",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "a05472ec-d9eb-4c68-89d0-e0b0f9395c31",
@@ -645,7 +725,8 @@
     "price": "1.054.64",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "1aedb1d2-4e5a-46bd-abcf-51fe5b967646",
@@ -653,7 +734,8 @@
     "price": "1.399.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "244dd85d-56fe-4550-b23b-cdc523b3df13",
@@ -661,7 +743,8 @@
     "price": "320.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "6a822d5b-0019-47c1-9624-601b4f13af4e",
@@ -669,7 +752,8 @@
     "price": "149.00",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "2d40dc73-1925-4559-9a39-4d2b7a607332",
@@ -677,7 +761,8 @@
     "price": "568.93",
     "currency": "BRL",
     "rating": "3.7/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "c916f357-2c9c-4fc1-9178-82cdf4846575",
@@ -685,7 +770,8 @@
     "price": "859.15",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "27e9de31-e5c1-4c45-8810-f2754ee3a2df",
@@ -693,7 +779,8 @@
     "price": "164.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "4fa37bd0-7de3-4d2e-8450-987913c61547",
@@ -701,7 +788,8 @@
     "price": "210.00",
     "currency": "BRL",
     "rating": "3.3/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "eb370a6b-c456-4d7f-85a8-cc79bce06fe1",
@@ -709,7 +797,8 @@
     "price": "1.646.10",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "bf3d1c03-9410-4eb5-af9c-97d9547908e1",
@@ -717,7 +806,8 @@
     "price": "140.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "813a3219-a491-4671-9635-4c03b905d5a6",
@@ -725,7 +815,8 @@
     "price": "225.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "e02858bb-7f02-487a-9ed0-095e0382e184",
@@ -733,7 +824,8 @@
     "price": "777.70",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "7d7f0b4a-4f25-4a99-9eba-25795946b102",
@@ -741,7 +833,8 @@
     "price": "3.195.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "bc2f8ae0-bb33-4c7b-bd38-2512289b4a07",
@@ -749,7 +842,8 @@
     "price": "3.993.71",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "43871373-3888-49e9-b541-d8f6d0c06b59",
@@ -757,7 +851,8 @@
     "price": "7.199.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "1d40bb18-7664-46a0-ae0e-064182afb58c",
@@ -765,7 +860,8 @@
     "price": "250.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "7eb97a09-a39c-44f5-a713-12defee5d771",
@@ -773,7 +869,8 @@
     "price": "1.067.71",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "f43ec9f9-d27e-4a3d-a43d-81d8838893b4",
@@ -781,7 +878,8 @@
     "price": "1.278.00",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "0d775fbf-bb42-4505-934d-87459c928ba9",
@@ -789,7 +887,8 @@
     "price": "2.190.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "c478c252-37ed-4ce6-8f6f-2dc609baf14c",
@@ -797,7 +896,8 @@
     "price": "129.99",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "cb122f41-5b52-43a6-a6f0-324c71cb5c21",
@@ -805,7 +905,8 @@
     "price": "1.109.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "5873f09f-fc26-4a68-a5c8-e479e957e550",
@@ -813,7 +914,8 @@
     "price": "1.769.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "9ec01969-163c-4467-8a16-d69317953cc2",
@@ -821,7 +923,8 @@
     "price": "145.97",
     "currency": "BRL",
     "rating": "1.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "8c89d5f4-b578-453c-a05c-ca98975ec994",
@@ -829,7 +932,8 @@
     "price": "1.699.90",
     "currency": "BRL",
     "rating": "4.9/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "20b1abb4-0038-42c0-81e0-e9687245d24c",
@@ -837,7 +941,8 @@
     "price": "374.67",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "41244c98-9130-4c9f-b56b-3ace1e87407c",
@@ -845,7 +950,8 @@
     "price": "99.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "129dbcc1-1c07-4a0f-9314-67aed0d03a91",
@@ -853,7 +959,8 @@
     "price": "75.90",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "d250328e-35f2-47f7-b733-1292ed584abd",
@@ -861,7 +968,8 @@
     "price": "132.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "29e04104-45f6-4344-a9a7-ce0488e69e54",
@@ -869,7 +977,8 @@
     "price": "225.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "209c9218-8177-4101-be70-b9a94e5996fb",
@@ -877,7 +986,8 @@
     "price": "280.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "687b2c19-f39f-4e30-b003-1fb28e855c6b",
@@ -885,7 +995,8 @@
     "price": "69.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "5e55bb2a-f4c6-469d-9173-97328939f24c",
@@ -893,7 +1004,8 @@
     "price": "559.63",
     "currency": "BRL",
     "rating": "1.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "15d11617-b948-42eb-bc1f-e609940bbfeb",
@@ -901,7 +1013,8 @@
     "price": "859.15",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "e0b232e1-fddf-4db4-ab39-fa3f6bde1394",
@@ -909,7 +1022,8 @@
     "price": "581.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "a382d4ca-c5dd-48bc-9953-50715e52ebbe",
@@ -917,7 +1031,8 @@
     "price": "568.93",
     "currency": "BRL",
     "rating": "3.7/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "1f1f5f26-947c-403d-bf2b-0188401fc63d",
@@ -925,7 +1040,8 @@
     "price": "140.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "5a830a61-a089-45ff-8d1e-7187a200d68e",
@@ -933,7 +1049,8 @@
     "price": "664.90",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "5ea31c9d-2c31-4598-8519-b189c63e0401",
@@ -941,7 +1058,8 @@
     "price": "3.195.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "8e0c1e6d-bce0-46fa-8caf-09621b64ac56",
@@ -949,7 +1067,8 @@
     "price": "164.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "fc3d0944-4142-4499-b811-af773b86c013",
@@ -957,7 +1076,8 @@
     "price": "7.199.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "b09a4dd8-f30b-4d84-9f81-320e939defa7",
@@ -965,7 +1085,8 @@
     "price": "231.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "9dec2aaf-16b7-4a07-97d2-50de42d1be9f",
@@ -973,7 +1094,8 @@
     "price": "250.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "a7a091ce-934b-4b98-9c84-1536bae18d19",
@@ -981,7 +1103,8 @@
     "price": "149.00",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "8d1538d7-8260-4cf1-9516-989fe2947c1a",
@@ -989,7 +1112,8 @@
     "price": "399.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "8fc720a9-a19a-4425-bd56-8c6153f1a5c7",
@@ -997,7 +1121,8 @@
     "price": "89.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "c93a7f82-ee35-447e-a0fe-83140eb9c388",
@@ -1005,7 +1130,8 @@
     "price": "125.99",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "21ee46c0-95b7-4a85-89b6-80fe98712d0c",
@@ -1013,7 +1139,8 @@
     "price": "1.899.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "4f7f22de-01d2-4655-ba0d-2aebd461ce0a",
@@ -1021,7 +1148,8 @@
     "price": "445.99",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "6ed547cb-eb52-4325-81b8-89e53dd15f07",
@@ -1029,7 +1157,8 @@
     "price": "1.189.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "e210317f-bb27-43f5-8a2c-23c85ac0a459",
@@ -1037,7 +1166,8 @@
     "price": "2.473.58",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "0ce23bbb-d7b2-4a77-8824-aa474f36ca95",
@@ -1045,7 +1175,8 @@
     "price": "2.190.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "96b2d8cc-97d8-49fe-a531-fe849b67f323",
@@ -1053,7 +1184,8 @@
     "price": "777.70",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "0cf24498-8d27-4d5a-9d10-aea4aaa63a58",
@@ -1061,7 +1193,8 @@
     "price": "2.680.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "e35f5302-9deb-4cac-85c5-e3a83e7645d8",
@@ -1069,7 +1202,8 @@
     "price": "4.289.99",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "ca11263d-6748-4aaa-a1d7-17e0e7975120",
@@ -1077,7 +1211,8 @@
     "price": "1.278.00",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "0d3821e5-1c88-43a1-9dc4-1b213633e02b",
@@ -1085,7 +1220,8 @@
     "price": "1.375.64",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "25259f3b-dd39-45d2-8516-d066f4bdb7af",
@@ -1093,7 +1229,8 @@
     "price": "279.90",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "7b60bc40-2546-48dc-8eef-46ab0f89972e",
@@ -1101,7 +1238,8 @@
     "price": "6.279.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "59dc6411-d97b-4d81-905b-6d1ff51c57b0",
@@ -1109,7 +1247,8 @@
     "price": "1.392.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "cc369778-2439-400e-81f7-d60148bcfbfc",
@@ -1117,7 +1256,8 @@
     "price": "1.109.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "ad11451d-0718-40ca-8f68-34c8eed2e174",
@@ -1125,7 +1265,8 @@
     "price": "1.769.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "34b78acc-853f-47bc-8f96-e91047342687",
@@ -1133,7 +1274,8 @@
     "price": "1.067.71",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "4895d9d8-9aae-4418-8a78-1922c6fe4145",
@@ -1141,7 +1283,8 @@
     "price": "2.399.27",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "f3d6769d-b240-42db-bc04-fb2f3aab7213",
@@ -1149,7 +1292,8 @@
     "price": "2.774.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "2077dbfb-faf7-406c-a9d1-f93bb9ff2e82",
@@ -1157,7 +1301,8 @@
     "price": "129.99",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "b9c86c15-14c7-4b58-8eb4-1208671b3a0c",
@@ -1165,7 +1310,8 @@
     "price": "3.138.14",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "080ec8d4-e8e4-4626-a0f8-85d696c3b0b7",
@@ -1173,7 +1319,8 @@
     "price": "145.97",
     "currency": "BRL",
     "rating": "1.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "572776c9-1467-4aa9-bcd8-05eaff8c6092",
@@ -1181,7 +1328,8 @@
     "price": "304.36",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "ea8338d0-5660-4010-9a41-d96088b5ce70",
@@ -1189,7 +1337,8 @@
     "price": "510.78",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "7435d513-70ef-48d7-b44d-f38a1acb4f8c",
@@ -1197,7 +1346,8 @@
     "price": "378.67",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "f734192f-3e26-44b7-9989-774c552b64c1",
@@ -1205,7 +1355,8 @@
     "price": "50.41",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "d79732d7-ead3-41dd-b5f4-765cb524d9ec",
@@ -1213,7 +1364,8 @@
     "price": "329.90",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "a6a779ac-0af5-416b-869d-f0315095ec12",
@@ -1221,7 +1373,8 @@
     "price": "129.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "abf13fcc-1665-4a29-ba57-5487744d5b87",
@@ -1229,7 +1382,8 @@
     "price": "839.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "124ed6d3-c724-4b50-9ee1-edacaf771634",
@@ -1237,7 +1391,8 @@
     "price": "929.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "8545ac8c-9ceb-464b-ad6b-c0d3b654e3bb",
@@ -1245,7 +1400,8 @@
     "price": "69.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "399609b7-4432-4fa5-ac71-7fee207d4aa0",
@@ -1253,7 +1409,8 @@
     "price": "235.00",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "2f60ec64-cc96-46cc-8bc3-9caadafc54ba",
@@ -1261,7 +1418,8 @@
     "price": "260.99",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "7b8de761-21b5-4d51-9e18-46fe16235183",
@@ -1269,7 +1427,8 @@
     "price": "1.300.00",
     "currency": "BRL",
     "rating": "3.4/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "9249ac42-1209-4b6e-92b6-12ba95836af3",
@@ -1277,7 +1436,8 @@
     "price": "200.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "649a22b5-963a-4bd1-844f-6f0cd06e2f40",
@@ -1285,7 +1445,8 @@
     "price": "299.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "365e99cf-e286-4d97-8faf-0b2ed2e9e287",
@@ -1293,7 +1454,8 @@
     "price": "537.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "1340b209-d381-4eb3-892d-1558c4986dc9",
@@ -1301,7 +1463,8 @@
     "price": "69.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "b4ec48cf-3066-49bb-8b3c-e1cf337cbda8",
@@ -1309,7 +1472,8 @@
     "price": "209.89",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "90df5852-42bc-4629-8f92-8445d372e3e6",
@@ -1317,7 +1481,8 @@
     "price": "4.639.16",
     "currency": "BRL",
     "rating": "3.8/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "db4f21f2-7c2b-4a16-96fb-6713c4eebc68",
@@ -1325,7 +1490,8 @@
     "price": "231.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "9609a9d0-bad6-43b3-9134-5090b17fb44f",
@@ -1333,7 +1499,8 @@
     "price": "1.375.64",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "5423278c-66e9-4684-9a91-a357054e8657",
@@ -1341,7 +1508,8 @@
     "price": "34.99",
     "currency": "BRL",
     "rating": "3.6/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "52f95085-1534-4bdd-826a-526d07ec46b8",
@@ -1349,7 +1517,8 @@
     "price": "349.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "11d16686-9f65-4513-b009-34063c745f4b",
@@ -1357,7 +1526,8 @@
     "price": "2.774.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "9f24bea1-5b94-44ee-b43c-f39162ceeb9e",
@@ -1365,7 +1535,8 @@
     "price": "777.70",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "ffe3f56f-6b42-441f-a0ca-5c4832be458c",
@@ -1373,7 +1544,8 @@
     "price": "425.99",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "64e36951-b5f6-4a0f-81c4-9ca35da5bc8e",
@@ -1381,7 +1553,8 @@
     "price": "166.85",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "ab41c688-0cb2-4ba5-bc97-dc1e14a45793",
@@ -1389,7 +1562,8 @@
     "price": "821.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "61a1c9fc-9df1-4e9d-9ca9-3695ec14ff26",
@@ -1397,7 +1571,8 @@
     "price": "399.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "c768fa19-51b9-4099-a064-0fe5e5147fbd",
@@ -1405,7 +1580,8 @@
     "price": "69.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "8c61ba74-c668-4e2e-a873-f282e998a363",
@@ -1413,7 +1589,8 @@
     "price": "1.278.00",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "da06746c-b13e-4e47-8dc4-9af814707442",
@@ -1421,7 +1598,8 @@
     "price": "1.109.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "f863dafe-11af-4764-85fa-654aa8b57914",
@@ -1429,7 +1607,8 @@
     "price": "1.392.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "bc1cb3e9-5594-41f6-ac1f-afa583d158e8",
@@ -1437,7 +1616,8 @@
     "price": "1.769.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "a1f07e2a-01fb-46b8-bba6-fdd7f045d2c7",
@@ -1445,7 +1625,8 @@
     "price": "2.399.27",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "4282736e-86f8-4c9c-b37a-413b156a57c7",
@@ -1453,7 +1634,8 @@
     "price": "149.00",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "16f3dfd9-592f-4811-9b6a-3ad297a5f3c3",
@@ -1461,7 +1643,8 @@
     "price": "1.067.71",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "7db7d7e6-f6c7-4b2a-8a04-a3d32f7bccdd",
@@ -1469,7 +1652,8 @@
     "price": "69.90",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "9b47af9d-a9ad-4771-9405-ac90df376b71",
@@ -1477,7 +1661,8 @@
     "price": "279.90",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "0bfd82b2-efcf-46b1-9446-5ba52b0aec1c",
@@ -1485,7 +1670,8 @@
     "price": "18.49",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "3d565dbf-fe99-4e63-aaa0-ba2381b3bfcf",
@@ -1493,7 +1679,8 @@
     "price": "740.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "36faeede-ffdc-40e7-a91f-7dff542a3f5f",
@@ -1501,7 +1688,8 @@
     "price": "52.53",
     "currency": "BRL",
     "rating": "3.8/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "d6340d87-8ff7-4ed9-9c73-edd8da8786eb",
@@ -1509,7 +1697,8 @@
     "price": "129.99",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "c84f68be-38e4-4f65-8e84-c5a63e508a6a",
@@ -1517,7 +1706,8 @@
     "price": "72.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "45bc3425-35fb-448f-8555-6cf5e5b0897e",
@@ -1525,7 +1715,8 @@
     "price": "3.138.14",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "c2f933a7-74d2-4cbe-bdd7-e37e1a681a39",
@@ -1533,7 +1724,8 @@
     "price": "1.929.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "a14fce01-cfa7-4675-a0c0-9325de73785d",
@@ -1541,7 +1733,8 @@
     "price": "145.97",
     "currency": "BRL",
     "rating": "1.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "ccc282c8-0144-4a24-bb51-8fbd7f0fedcf",
@@ -1549,7 +1742,8 @@
     "price": "469.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "3793658b-5739-459b-9178-e0e554b4b8b5",
@@ -1557,7 +1751,8 @@
     "price": "304.36",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "c4e35ccc-44a1-45c3-b77f-f287ffe4a9d2",
@@ -1565,7 +1760,8 @@
     "price": "208.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "56f1071d-ba89-493f-b376-9837b8b0eac7",
@@ -1573,7 +1769,8 @@
     "price": "510.78",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "1f778dcc-7d55-4901-9b92-3905bf2e6719",
@@ -1581,7 +1778,8 @@
     "price": "378.67",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "5066c9c6-1494-46c0-a3d0-87ae8d3f867f",
@@ -1589,7 +1787,8 @@
     "price": "50.41",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "2ec38d99-fa8a-41f8-b99b-6c4572ad6dda",
@@ -1597,7 +1796,8 @@
     "price": "329.90",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "caaf5bf4-5fd2-4ff1-aa03-e0b567f8147b",
@@ -1605,7 +1805,8 @@
     "price": "167.09",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "0723ffe4-bef0-4549-8262-a4eeec20c3d3",
@@ -1613,7 +1814,8 @@
     "price": "293.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "e114ef53-d89b-4599-9d06-ee3b21fffe9d",
@@ -1621,7 +1823,8 @@
     "price": "999.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "1cb9c794-0d55-4e15-be42-2f9f507b689f",
@@ -1629,7 +1832,8 @@
     "price": "149.90",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "38166849-c6b9-4304-9887-93d8639dab5a",
@@ -1637,7 +1841,8 @@
     "price": "159.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "d8dc3652-dcf9-4473-b550-ffe8a2f9832e",
@@ -1645,7 +1850,8 @@
     "price": "158.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "7b725ecc-c583-47d1-a1ea-d84bdc81f6ab",
@@ -1653,7 +1859,8 @@
     "price": "530.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "dd58b7f6-5d11-47d5-89d4-51df8b1a33e6",
@@ -1661,7 +1868,8 @@
     "price": "120.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "1e88ab98-2f68-4710-a093-959f87c85d02",
@@ -1669,7 +1877,8 @@
     "price": "140.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "22fc4d3f-ab8c-4cc3-bfc9-f70295451a16",
@@ -1677,7 +1886,8 @@
     "price": "777.70",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "2d7d3609-0df8-4c38-8bff-94de3900dda1",
@@ -1685,7 +1895,8 @@
     "price": "34.99",
     "currency": "BRL",
     "rating": "3.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "638c0a3e-037a-48cb-881f-86580d1732df",
@@ -1693,7 +1904,8 @@
     "price": "49.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "3c3efc27-f94d-4b66-a358-4b0e8695c8db",
@@ -1701,7 +1913,8 @@
     "price": "349.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "00fb86da-aece-4c62-8c96-03be0b705df3",
@@ -1709,7 +1922,8 @@
     "price": "256.94",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "fd409d28-ae05-4402-8d19-957b796484a4",
@@ -1717,7 +1931,8 @@
     "price": "279.90",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "0fa1b574-e11c-42c9-9245-9889425eea35",
@@ -1725,7 +1940,8 @@
     "price": "740.00",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "07d1be66-2c6d-4454-aa07-aa76dd177d43",
@@ -1733,7 +1949,8 @@
     "price": "69.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "c7ac174d-3bb0-4965-a8e6-b034d36997e2",
@@ -1741,7 +1958,8 @@
     "price": "69.90",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "5ace9eaf-0bdf-4eb0-95b5-76bd999ff5e8",
@@ -1749,7 +1967,8 @@
     "price": "150.26",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "499ab543-8414-4cf1-9210-cbdb6a25bf8b",
@@ -1757,7 +1976,8 @@
     "price": "129.99",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "89b5595b-cae8-4a14-8063-35527684b33f",
@@ -1765,7 +1985,8 @@
     "price": "52.53",
     "currency": "BRL",
     "rating": "3.8/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "1c6f281c-f6f5-4d61-b5ed-ce6eb4d26a29",
@@ -1773,7 +1994,8 @@
     "price": "189.91",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "1042ce60-ab09-44ca-94ab-83aeb0cc3531",
@@ -1781,7 +2003,8 @@
     "price": "3.138.14",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "769f27cd-b5cf-4e37-a588-769073958452",
@@ -1789,7 +2012,8 @@
     "price": "18.49",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "337a5fe7-b8a4-48d4-925e-0c27cb42eee4",
@@ -1797,7 +2021,8 @@
     "price": "821.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "46f33b26-ab7b-4950-b1c6-87c16afeb870",
@@ -1805,7 +2030,8 @@
     "price": "1.800.91",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "d6b2943b-86dd-48c9-917c-7a84579cde59",
@@ -1813,7 +2039,8 @@
     "price": "89.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "5ab920d2-54d0-41e8-9afa-d542445ab5f4",
@@ -1821,7 +2048,8 @@
     "price": "309.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "a82f0b06-d902-41f9-832d-5277b52385a5",
@@ -1829,7 +2057,8 @@
     "price": "206.80",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "9a466f87-7433-4105-a888-02c8772d3845",
@@ -1837,7 +2066,8 @@
     "price": "8.30",
     "currency": "BRL",
     "rating": "3.5/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "29aef984-5f02-4fcf-ad61-7722db020652",
@@ -1845,7 +2075,8 @@
     "price": "72.90",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "260bb87a-4d97-473e-9030-3a987e2523b2",
@@ -1853,7 +2084,8 @@
     "price": "345.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "632093ed-e721-4019-b309-29743d54c900",
@@ -1861,7 +2093,8 @@
     "price": "1.929.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "5692a77c-4987-41e7-bf5c-67b02e9b76bc",
@@ -1869,7 +2102,8 @@
     "price": "145.97",
     "currency": "BRL",
     "rating": "1.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "de0aa44c-497d-4a5f-b953-dc670c20f57b",
@@ -1877,7 +2111,8 @@
     "price": "181.26",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "96312b91-7307-450a-8cd6-ec4d415ba70d",
@@ -1885,7 +2120,8 @@
     "price": "55.99",
     "currency": "BRL",
     "rating": "3.7/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "eb2ed5f4-936b-4c26-a90f-dc6887b1d4fc",
@@ -1893,7 +2129,8 @@
     "price": "304.36",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "054ccd8d-af41-4bb2-913f-6d5760cb32b6",
@@ -1901,7 +2138,8 @@
     "price": "469.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "9bd49aae-8834-497e-bc97-c72c08984990",
@@ -1909,7 +2147,8 @@
     "price": "790.96",
     "currency": "BRL",
     "rating": "3.3/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "0f9c73ee-002b-4274-9cbb-dae9959a7f09",
@@ -1917,7 +2156,8 @@
     "price": "1.901.12",
     "currency": "BRL",
     "rating": "4.4/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "8971d542-f203-4ae3-9f44-c601a2050a96",
@@ -1925,7 +2165,8 @@
     "price": "88.80",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "486544e9-944c-4ac1-845d-3a8c8589dfa4",
@@ -1933,7 +2174,8 @@
     "price": "208.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "7fce95df-89b9-461a-b4d2-3eadaee65dd9",
@@ -1941,7 +2183,8 @@
     "price": "510.78",
     "currency": "BRL",
     "rating": "3.9/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "f12b7174-1855-4098-b289-ae444619558e",
@@ -1949,7 +2192,8 @@
     "price": "50.41",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "707d7e8a-53c8-40fd-a6f7-d2b6892f83a1",
@@ -1957,7 +2201,8 @@
     "price": "329.90",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "95fb45b3-6b8e-44b8-a40e-12a7bbe4de4e",
@@ -1965,7 +2210,8 @@
     "price": "378.67",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "3ec0eb43-d00b-42ea-957a-a9673bc270b2",
@@ -1973,7 +2219,8 @@
     "price": "54.90",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "f618a818-29fd-4b22-b3f3-aa6d5824d8e5",
@@ -1981,7 +2228,8 @@
     "price": "255.92",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "19f9cdcd-761a-4ced-9cc2-e0322459dc5d",
@@ -1989,7 +2237,8 @@
     "price": "281.08",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "5f55fe1a-5f7a-413a-b0e0-07fc9302f8a8",
@@ -1997,7 +2246,8 @@
     "price": "293.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "53531651-6b2d-4f9f-b8a6-a299b324df4d",
@@ -2005,7 +2255,8 @@
     "price": "167.09",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "7cde1907-7b50-45ec-acc0-e91dd82b4b5d",
@@ -2013,7 +2264,8 @@
     "price": "299.90",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "96a7963b-3243-4a12-a33e-7640aec2e728",
@@ -2021,7 +2273,8 @@
     "price": "3.899.00",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "c359c5bf-02d7-49a1-aaff-566558c2f50d",
@@ -2029,7 +2282,8 @@
     "price": "332.00",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "6c7ba05f-0ba2-424c-ac72-34afb7975502",
@@ -2037,7 +2291,8 @@
     "price": "101.00",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "5c3ac6ba-542b-43ba-8190-de49df6d69c3",
@@ -2045,7 +2300,8 @@
     "price": "220.00",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "fa1ed9a8-4b06-421d-9fd8-90413e55d695",
@@ -2053,7 +2309,8 @@
     "price": "255.92",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "6936909d-7f82-40e8-bbf7-75bedfa2a57f",
@@ -2061,7 +2318,8 @@
     "price": "281.08",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "efa8f352-974d-4902-959a-9b10acd750b3",
@@ -2069,7 +2327,8 @@
     "price": "293.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "10109037-8a92-41a7-8a83-0ecd4f4ae127",
@@ -2077,7 +2336,8 @@
     "price": "167.09",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "07125f5f-a59e-40a4-9a44-9aefd47f8188",
@@ -2085,7 +2345,8 @@
     "price": "46.56",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "8bd4e898-38b1-426e-bc70-da44b21bebb9",
@@ -2093,7 +2354,8 @@
     "price": "34.46",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "a40fa90d-879e-44b1-bd40-9b575c3fffdd",
@@ -2101,7 +2363,8 @@
     "price": "189.99",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "8bb3be55-d9d4-4793-83c7-f6195592c330",
@@ -2109,7 +2372,8 @@
     "price": "58.60",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "27311181-5a71-47f2-ac2f-959bf2a4b2a1",
@@ -2117,7 +2381,8 @@
     "price": "156.95",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "4c4279ce-a3cc-4979-bb46-85cd11aadb7b",
@@ -2125,7 +2390,8 @@
     "price": "52.50",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "c3e4e8a9-bd42-483d-833c-a9eb2482b219",
@@ -2133,7 +2399,8 @@
     "price": "821.99",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "6ad55ada-348d-4e4f-9b9f-1c7b36cc2c45",
@@ -2141,7 +2408,8 @@
     "price": "89.99",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "f6f468fc-6870-4d35-a904-712663ca9545",
@@ -2149,7 +2417,8 @@
     "price": "309.99",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "2f8a965e-8611-4a2f-8004-9b36a3759ebc",
@@ -2157,7 +2426,8 @@
     "price": "125.99",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "a79c9d7c-8960-4c01-8568-d17c79515783",
@@ -2165,7 +2435,8 @@
     "price": "117.55",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "44a67ee5-0044-4f59-875a-5cf5a6d5c839",
@@ -2173,7 +2444,8 @@
     "price": "189.99",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "e10b3ab1-ab85-49a6-8a54-d9399fe5db85",
@@ -2181,7 +2453,8 @@
     "price": "319.99",
     "currency": "BRL",
     "rating": "4.2/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "e3cfd2c7-92f4-484e-9c64-6766180dd8bc",
@@ -2189,7 +2462,8 @@
     "price": "468.51",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "6119cc4a-e7cd-4aa6-9563-568f282cb90e",
@@ -2197,7 +2471,8 @@
     "price": "1.217.90",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "1f8be079-022a-460f-807d-ef4572ca1f39",
@@ -2205,7 +2480,8 @@
     "price": "41.00",
     "currency": "BRL",
     "rating": "4.8/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "22ae4f0b-7dfe-4370-ba89-981afa19d7cd",
@@ -2213,7 +2489,8 @@
     "price": "53.71",
     "currency": "BRL",
     "rating": "4.7/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "1e5e4be8-8f12-4a99-9d25-8428cd62a827",
@@ -2221,7 +2498,8 @@
     "price": "104.88",
     "currency": "BRL",
     "rating": "3.7/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "51d58b88-bc2a-43c5-bac7-f6cd8a3d3239",
@@ -2229,7 +2507,8 @@
     "price": "6.222.68",
     "currency": "BRL",
     "rating": "4.1/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   },
   {
     "id": "b324feca-3e10-4009-a7f1-7295fc39cac6",
@@ -2237,7 +2516,8 @@
     "price": "51.90",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 3
+    "quantity": 3,
+    "availability": true
   },
   {
     "id": "4e53bc51-5c11-43f4-a43e-d8e203558133",
@@ -2245,7 +2525,8 @@
     "price": "15.20",
     "currency": "BRL",
     "rating": "3.2/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "c1bb9dc8-7abc-4457-adbd-f407e61e982f",
@@ -2253,7 +2534,8 @@
     "price": "152.53",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "47b76c9f-452a-4398-9f27-bee77b0c2720",
@@ -2261,7 +2543,8 @@
     "price": "5.849.90",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 9
+    "quantity": 9,
+    "availability": true
   },
   {
     "id": "7c201d44-87c4-41db-aabd-8b002d7d2dd4",
@@ -2269,7 +2552,8 @@
     "price": "93.29",
     "currency": "BRL",
     "rating": "4.3/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "6abe1eb8-4c31-4b74-8e2b-9ca3baa4fc14",
@@ -2277,7 +2561,8 @@
     "price": "37.69",
     "currency": "BRL",
     "rating": "3.0/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "910dcb12-6165-4151-b2c8-30828de768cf",
@@ -2285,7 +2570,8 @@
     "price": "29.67",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 7
+    "quantity": 7,
+    "availability": true
   },
   {
     "id": "45e770a0-0edc-4d26-99c4-73414d1405e5",
@@ -2293,7 +2579,8 @@
     "price": "56.39",
     "currency": "BRL",
     "rating": "4.0/5",
-    "quantity": 1
+    "quantity": 1,
+    "availability": true
   },
   {
     "id": "5be5b9e0-dfe1-4385-a2ad-8e22e9e42104",
@@ -2301,7 +2588,8 @@
     "price": "12.60",
     "currency": "BRL",
     "rating": "2.8/5",
-    "quantity": 6
+    "quantity": 6,
+    "availability": true
   },
   {
     "id": "16b9af1d-7760-4196-a935-e74336593a5b",
@@ -2309,7 +2597,8 @@
     "price": "4.869.00",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 2
+    "quantity": 2,
+    "availability": true
   },
   {
     "id": "a032f4c0-683f-4c0c-a57e-598aeb0fb1e2",
@@ -2317,7 +2606,8 @@
     "price": "6.999.90",
     "currency": "BRL",
     "rating": "4.6/5",
-    "quantity": 10
+    "quantity": 10,
+    "availability": true
   },
   {
     "id": "4bb5763e-390f-448c-807a-76e97c5509d2",
@@ -2325,7 +2615,8 @@
     "price": "132.04",
     "currency": "BRL",
     "rating": "5.0/5",
-    "quantity": 8
+    "quantity": 8,
+    "availability": true
   },
   {
     "id": "cbdabc04-590e-482a-805f-122ffb2832d4",
@@ -2333,7 +2624,8 @@
     "price": "399.99",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 4
+    "quantity": 4,
+    "availability": true
   },
   {
     "id": "28234b83-c4ce-4dba-98b3-8f4186b8d83b",
@@ -2341,6 +2633,7 @@
     "price": "370.59",
     "currency": "BRL",
     "rating": "4.5/5",
-    "quantity": 5
+    "quantity": 5,
+    "availability": true
   }
 ]

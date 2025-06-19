@@ -15,8 +15,6 @@ exports.up = function (knex) {
   });
 };
 
-// TODO Add availability to every other space
-
 /**
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }

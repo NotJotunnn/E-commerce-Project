@@ -14,18 +14,26 @@ beforeAll(() => {
   );
 });
 
+beforeAll(async () => {
+  const mockData = await ProductServices.pegarPorTitle("Carro5")
+
+  for(const mockItem of mockData) {
+    await ProductServices.deletar(mockItem.id)
+  }
+})
+
 afterAll(() => {
   server.close();
 });
 
 describe("Testing Product routes", () => {
   const productMock = {
-    id: uuidV4(),
-    title: "Carro",
+    title: "Carro5",
     price: "1.000",
     currency: "BRL",
     rating: "5.0/5",
     quantity: 10,
+    availability: true,
   };
 
   it("Testing GET /produtos", async () => {
@@ -44,6 +52,7 @@ describe("Testing Product routes", () => {
             currency: expect.any(String),
             rating: expect.any(String),
             quantity: expect.any(Number),
+            availability: expect.any(Boolean),
             updated_at: expect.any(String),
             created_at: expect.any(String),
           })
@@ -56,7 +65,7 @@ describe("Testing Product routes", () => {
       .post("/produtos")
       .set("Accept", "application/json")
       .send(productMock)
-      // .expect(201)
+      .expect(201)
       .then((response) => {
         expect(response.body.message).toEqual(
           "Produto cadastrado com sucesso."
@@ -69,6 +78,7 @@ describe("Testing Product routes", () => {
             currency: expect.any(String),
             rating: expect.any(String),
             quantity: expect.any(Number),
+            availability: expect.any(Boolean),
             updated_at: expect.any(String),
             created_at: expect.any(String),
           })
@@ -85,7 +95,6 @@ describe("Testing Product routes", () => {
   ])(
     "Testing POST /produtos, should return an error, step %s",
     async (name, productValue) => {
-      // if(name == "Quantity") console.log(productValue)
       await request(app)
         .post("/produtos")
         .set("Accept", "application/json")
@@ -93,7 +102,7 @@ describe("Testing Product routes", () => {
         .expect(400)
         .then((response) => {
           expect(response.body.message).toEqual(
-            `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios.`
+            `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity', 'availability' não podem estar vazios.`
           );
         });
     }
@@ -139,6 +148,7 @@ describe("Testing Product routes", () => {
       currency: "BRL",
       rating: "5.0/5",
       quantity: 10,
+      availability: true,
     };
 
     const product = await ProductServices.pegar();

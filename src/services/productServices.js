@@ -1,31 +1,34 @@
 const Database = require("../Knex/database");
+const { v4: uuidV4 } = require("uuid")
 
 class ProductServices {
   static async cadastrar(dto) {
     try {
       if (
         !dto ||
-        !dto.id ||
         !dto.title ||
         !dto.price ||
         !dto.currency ||
         !dto.rating ||
-        dto.quantity == 0
+        dto.quantity == 0 ||
+        dto.availability === null
       ) {
         throw new Error(
-          "Campos 'title', 'price', 'currency', 'rating', 'quantity' não podem estar vazios."
+          "Campos 'title', 'price', 'currency', 'rating', 'quantity', 'availability' não podem estar vazios."
         );
       }
 
+      const id = uuidV4()
+
       const productAlreadyExists = await Database("products")
-        .where("id", dto.id)
+        .where("title", dto.title)
         .first();
 
       if (productAlreadyExists) throw new Error("Produto já cadastrado.");
 
-      await Database("products").insert(dto);
+      await Database("products").insert({...dto, id});
 
-      return await Database("products").where("id", dto.id).first();
+      return await Database("products").where("id", id).first();
     } catch (err) {
       throw new Error(`Não foi possível cadastrar dessa vez: ${err.message}`);
     }
@@ -39,16 +42,27 @@ class ProductServices {
     }
   }
 
+  // ! DEBUG ONLY
+  static async pegarPorTitle(title) {
+    try {
+      return await Database("products").where("title", title)
+    } catch (err) {
+      throw new Error(`Não foi possível pegar por debug: ${err.message}`)
+    }
+  }
+
   static async pegarPaginado(resultsLimit, pageCounter) {
     try {
-      if(!resultsLimit) 
-        throw new Error("Limite de resultados não declarado.")
-      if(!pageCounter)
-        throw new Error("Página não declarada.")
+      if (!resultsLimit) throw new Error("Limite de resultados não declarado.");
+      if (!pageCounter) throw new Error("Página não declarada.");
 
-      return await Database("products").limit(resultsLimit).offset(resultsLimit * (pageCounter - 1))
+      return await Database("products")
+        .limit(resultsLimit)
+        .offset(resultsLimit * (pageCounter - 1));
     } catch (err) {
-      throw new Error(`Não foi possível retornar os produtos paginados: ${err.message}`)
+      throw new Error(
+        `Não foi possível retornar os produtos paginados: ${err.message}`
+      );
     }
   }
 
