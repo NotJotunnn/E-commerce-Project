@@ -3,7 +3,8 @@ const { beforeAll, afterAll, describe, it } = require("@jest/globals");
 const app = require("../../index");
 const request = require("supertest");
 const ProductServices = require("../../services/productServices");
-const { v4: uuidV4 } = require("uuid")
+const { v4: uuidV4 } = require("uuid");
+const { ProductServiceDebug } = require("../../utils");
 require("dotenv").config();
 
 let server;
@@ -15,7 +16,7 @@ beforeAll(() => {
 });
 
 beforeAll(async () => {
-  const mockData = await ProductServices.pegarPorTitle("Carro5")
+  const mockData = await ProductServiceDebug.pegarPorTitle("Carro5")
 
   for(const mockItem of mockData) {
     await ProductServices.deletar(mockItem.id)

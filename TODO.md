@@ -11,14 +11,17 @@
 
 - ✅ Start implementing migrations for users, permissions, user_permissions
 - ✅ Implement basic CRUD for users, permissions, user_permissions
-- 🟨 Impede duplicates from happening on users, products n permissions, user_permissions
+- ✅ Impede duplicates from happening on users, products n permissions, user_permissions
 - ✅ Add Database Schema/Diagram
-- 🟨 Add new GET products route w/Pagination
+- ✅ Add new GET products route w/Pagination
 
 ## For the day after (19/06)
 
-- 🟨 Impede duplicates from happening on users, products n permissions, user_permissions
-- Test stuff out
+- ✅ Impede duplicates from happening on users, products n permissions, user_permissions
+- 🟨 Test stuff out (finishing touches)
+
+## ...And the day after (20/06)
+
 - Start working on authentication
 - Start working on middlewares
 - Update fictional company name
@@ -26,7 +29,6 @@
 
 ## For the future
 
-- 🟨 Add new GET products route w/Pagination
 - Design the Frontend on Figma
 - Work on Shopping cart addition
 - Implement the Frontend on NextJS

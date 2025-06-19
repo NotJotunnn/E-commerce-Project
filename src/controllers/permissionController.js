@@ -48,7 +48,7 @@ class PermissionController {
   static async deletarPermissao(req, res) {
     const { id } = req.params
     try {
-      await PermissionService.atualizar(id)
+      await PermissionService.deletar(id)
 
       res.status(200).send({ message: "Permissão deletada com sucesso.", data: {} })
     } catch (err) {

@@ -1,14 +1,15 @@
 const { describe, it, expect, afterAll, beforeAll } = require("@jest/globals");
 const ProductServices = require("../../services/productServices");
 const Database = require("../../Knex/database");
-const { v4: uuidV4 } = require("uuid")
+const { v4: uuidV4 } = require("uuid");
+const ProductServiceDebug = require("../../utils/productServiceDebug");
 
 afterAll(() => {
   Database.destroy();
 });
 
 beforeAll(async () => {
-  const mockData = await ProductServices.pegarPorTitle("Carro5")
+  const mockData = await ProductServiceDebug.pegarPorTitle("Carro5")
 
   for(const mockItem of mockData) {
     await ProductServices.deletar(mockItem.id)

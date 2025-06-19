@@ -42,15 +42,6 @@ class ProductServices {
     }
   }
 
-  // ! DEBUG ONLY
-  static async pegarPorTitle(title) {
-    try {
-      return await Database("products").where("title", title)
-    } catch (err) {
-      throw new Error(`Não foi possível pegar por debug: ${err.message}`)
-    }
-  }
-
   static async pegarPaginado(resultsLimit, pageCounter) {
     try {
       if (!resultsLimit) throw new Error("Limite de resultados não declarado.");

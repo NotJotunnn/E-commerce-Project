@@ -53,7 +53,7 @@ class UserController {
     try {
       await UserService.deletar(id)
 
-      res.status(200).send({ message: "Usuário deletado com sucesso", data: {} })
+      res.status(200).send({ message: "Usuário deletado com sucesso.", data: {} })
     } catch (err) {
       res.status(400).send({ message: err.message, data: {} })
     }

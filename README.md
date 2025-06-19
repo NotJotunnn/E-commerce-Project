@@ -47,8 +47,8 @@ A complete implementation of an audio equipment marketplace with:
 ## 🔧 Development Setup
 
 ```bash
-# Inicializar ambiente
-git clone [url-do-repositório]
+# Initialize environment
+git clone git@github.com:NotJotunnn/E-commerce-Project.git
 npm install
 docker-compose up -d  # Start container on:
                       # Database: 5432
@@ -123,6 +123,7 @@ npm run dev           # Start the node server
 - GET /usuario-permissao/id/:id // Search permission by user id
 - PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Update permission by user id
 - DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permission by user id
+<!-- TODO Add new routes -->
 
 ##### Dados _necessários_ para POST
 
@@ -200,7 +201,7 @@ Implementação completa de um marketplace de equipamentos de áudio com:
 
 ```bash
 # Inicializar ambiente
-git clone [url-do-repositório]
+git clone git@github.com:NotJotunnn/E-commerce-Project.git
 npm install
 docker-compose up -d  # Inicia containers nas portas:
                       # Banco: 5432
@@ -254,7 +255,7 @@ npm run dev           # Inicia servidor Node
 - email // email do usuário // String (Não pode haver duplicatas)
 - phone_number // número do usuário // String
 
-#### Main permission routes:
+#### Rotas principais de permissões:
 
 - GET /permissao // Lista todas as permissões
 - POST /permissao // Registra nova permissão
@@ -267,7 +268,7 @@ npm run dev           # Inicia servidor Node
 - name // nome da permissão // String
 - description // descrição da permissão // String
 
-#### Main user_permission routes:
+#### Rotas principais da relação usuário e permissões:
 
 - GET /usuario-permissao // Lista todas as permissões de usuários globais
 - POST /usuario-permissao // Registra nova permissão pro usuário
@@ -275,6 +276,7 @@ npm run dev           # Inicia servidor Node
 - GET /usuario-permissao/id/:id // Procura por permissões por id de usuário
 - PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Atualiza permissão por id de usuário
 - DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permissão por id de usuário
+<!-- TODO Add new routes -->
 
 ##### Dados _necessários_ para POST
 

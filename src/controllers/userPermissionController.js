@@ -22,11 +22,12 @@ class UserPermissionController {
         res
           .status(400)
           .send({ message: "Array de permissões vazio.", data: {} });
+      
+      const registeredPermissions = []
 
-      const registeredPermissions = permissionsArray.map(
-        async (permission_id) =>
-          await UserPermissionService.cadastrar({ user_id, permission_id })
-      );
+      for(const permissionId of permissionsArray) {
+        registeredPermissions.push(await UserPermissionService.cadastrar({ user_id, permission_id: permissionId }))
+      }
 
       res
         .status(201)
@@ -54,11 +55,11 @@ class UserPermissionController {
     }
   }
 
-  static async pegarPermissaoPorId(req, res) {
-    const { id } = req.params;
+  static async pegarPermissoesPorId(req, res) {
+    const { user_id, permission_id } = req.params;
 
     try {
-      const permission = await UserPermissionService.pegarPorId(id);
+      const permission = await UserPermissionService.pegarPorId(user_id, permission_id);
 
       res
         .status(200)
@@ -68,13 +69,27 @@ class UserPermissionController {
     }
   }
 
+  static async pegarPermissoesPorUserId(req, res) {
+    const { user_id } = req.params
+
+    try {
+      const permissions = await UserPermissionService.pegarPorUserId(user_id)
+
+      res.status(200).send({ message: "Permissões pegas com sucesso.", data: permissions })
+    } catch (err) {
+      res.status(400).send({ message: err.message, data: {} })
+    }
+  }
+
   static async atualizarPermissao(req, res) {
     const { user_id, permission_id } = req.params;
+    const { new_permission_id } = req.body
 
     try {
       const updatedPermission = await UserPermissionService.atualizar(
         user_id,
-        permission_id
+        permission_id,
+        new_permission_id
       );
 
       res

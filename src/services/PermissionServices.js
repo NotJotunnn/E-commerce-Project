@@ -6,13 +6,13 @@ class PermissionService {
       if (!dto || !dto.name || !dto.description)
         throw new Error("Campos 'name', 'description' são necessários.");
 
-      await Database("permissions").insert(dto);
-
       const permissionAlreadyExists = await Database("permissions")
         .where("name", dto.name)
         .first();
 
       if (permissionAlreadyExists) throw new Error("Permissão já cadastrada.");
+
+      await Database("permissions").insert(dto);
 
       return await Database("permissions").where("name", dto.name).first();
     } catch (err) {
@@ -34,7 +34,11 @@ class PermissionService {
     try {
       if (!id) throw new Error("Id não incluso.");
 
-      return await Database("permissions").where("id", id).first();
+      const permission = await Database("permissions").where("id", id).first();
+
+      if(!permission) throw new Error("Permissão não cadastrada.")
+
+      return permission
     } catch (err) {
       throw new Error(
         `Não foi possível pegar uma permissão por id: ${err.message}`
@@ -52,7 +56,9 @@ class PermissionService {
 
       if (!permissionIsFound) throw new Error("Permissão não cadastrada.");
 
-      return Database("permissions").where("id", id).update(dto);
+      await Database("permissions").where("id", id).update(dto);
+
+      return Database("permissions").where("id", id).first()
     } catch (err) {
       throw new Error(
         `Não foi possível atualizar uma permissão: ${err.message}`
@@ -70,10 +76,12 @@ class PermissionService {
 
       if (!permissionIsFound) throw new Error("Permissão não cadastrada.");
 
-      return Database("permissions").where("id", id).del();
+      await Database("permissions").where("id", id).del();
+
+      return; 
     } catch (err) {
       throw new Error(
-        `Não foi possível atualizar uma permissão: ${err.message}`
+        `Não foi possível deletar uma permissão: ${err.message}`
       );
     }
   }
