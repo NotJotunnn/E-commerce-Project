@@ -6,7 +6,7 @@ class UserPermissionController {
       const newPermission = await UserPermissionService.cadastrar(req.body);
 
       res.status(201).send({
-        message: "Cadastro de permissão criado com sucesso.",
+        message: "Cadastro de permissão feito com sucesso.",
         data: newPermission,
       });
     } catch (err) {
@@ -47,7 +47,7 @@ class UserPermissionController {
       res
         .status(200)
         .send({
-          message: "Permissões pegadas com sucesso.",
+          message: "Permissões pegas com sucesso.",
           data: permissions,
         });
     } catch (err) {
@@ -81,28 +81,6 @@ class UserPermissionController {
     }
   }
 
-  static async atualizarPermissao(req, res) {
-    const { user_id, permission_id } = req.params;
-    const { new_permission_id } = req.body
-
-    try {
-      const updatedPermission = await UserPermissionService.atualizar(
-        user_id,
-        permission_id,
-        new_permission_id
-      );
-
-      res
-        .status(200)
-        .send({
-          message: "Permissão atualizada com sucesso.",
-          data: updatedPermission,
-        });
-    } catch (err) {
-      res.status(400).send({ message: err.message, data: {} });
-    }
-  }
-
   static async deletarPermissao(req, res) {
     const { user_id, permission_id } = req.params;
 
@@ -111,7 +89,7 @@ class UserPermissionController {
 
       res
         .status(200)
-        .send({ message: "Permissões deletadas com sucesso.", data: {} });
+        .send({ message: "Permissão deletadas com sucesso.", data: {} });
     } catch (err) {
       res.status(200).send({ message: err.message, data: {} });
     }

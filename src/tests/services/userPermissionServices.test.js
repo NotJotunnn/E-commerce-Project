@@ -67,25 +67,6 @@ describe("Testing UserPermissionService class", () => {
     await expect(userPermission).rejects.toThrow("Não foi possível pegar permissão por id: user_id é obrigatório.")
   })
 
-  it("Testing atualizar method", async () => {
-    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
-    const permissionId = (await PermissionService.pegar())[0].id
-    const newPermissionId = (await PermissionService.pegar())[1].id
-
-    const userPermission = await UserPermissionService.atualizar(userId, permissionId, newPermissionId)
-
-    expect(userPermission).toEqual(expect.objectContaining({
-      user_id: userId,
-      permission_id: newPermissionId
-    }))
-  })
-
-  it("Testing atualizar method, should return a generic error", async () => {
-    const userPermission = UserPermissionService.atualizar()
-
-    await expect(userPermission).rejects.toThrow("Não foi possível atualizar permissão: Id de usuário é obrigatório.")
-  })
-
   it("Testing deletar method", async () => {
     const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
     const permissionId = (await PermissionService.pegar())[0].id

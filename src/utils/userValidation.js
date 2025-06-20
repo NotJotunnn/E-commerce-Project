@@ -29,13 +29,14 @@ class UserValidation {
         .where("phone_number", dto.phone_number)
         .first();
 
-      if (phoneNumberExists) throw new Error("Número de celular já utilizado.");
-
       const phoneNumberRegex =
-        // eslint-disable-next-line no-useless-escape
-        /^(\+55\s?)?(\(?\d{2}\)?)?\s?(9?\s?\d{4}[-\.\s]?\d{4})$/;
+      // eslint-disable-next-line no-useless-escape
+      /^(\+55\s?)?(\(?\d{2}\)?)?\s?(9?\s?\d{4}[-\.\s]?\d{4})$/;
 
-      if (!phoneNumberRegex.test(dto.phone_number))
+      if (phoneNumberExists !== undefined)  
+        throw new Error("Número de celular já utilizado.");
+
+      else if (!phoneNumberRegex.test(dto.phone_number))
         throw new Error(
           "Número de celular não convencional, seu número deve conter 1 código de país (opcional), 1 código de estado (opcional), 9 extra (opcional), número."
         );

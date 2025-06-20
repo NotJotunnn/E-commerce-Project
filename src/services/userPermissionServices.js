@@ -65,23 +65,6 @@ class UserPermissionService {
     }
   }
 
-  static async atualizar(user_id, permission_id, newPermissionId) {
-    try {
-      if (!user_id) throw new Error("Id de usuário é obrigatório.");
-      else if (!permission_id) throw new Error("Id de permissão é obrigatório.");
-      else if (!newPermissionId) throw new Error("Id da permissão nova é obrigatório.");
-
-      await Database("user_permissions")
-        .where("user_id", user_id)
-        .where("permission_id", permission_id)
-        .update({ permission_id: newPermissionId });
-      
-      return this.pegarPorId(user_id, newPermissionId)
-    } catch (err) {
-      throw new Error(`Não foi possível atualizar permissão: ${err.message}`);
-    }
-  }
-
   static async deletar(dto) {
     try {
       if (!dto || !dto.user_id || !dto.permission_id)

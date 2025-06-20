@@ -18,10 +18,11 @@
 ## For the day after (19/06)
 
 - ✅ Impede duplicates from happening on users, products n permissions, user_permissions
-- 🟨 Test stuff out (finishing touches)
+- ✅ Test stuff out (finishing touches)
 
 ## ...And the day after (20/06)
 
+- ✅ Test stuff out (finishing touches)
 - Start working on authentication
 - Start working on middlewares
 - Update fictional company name

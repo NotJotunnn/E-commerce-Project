@@ -94,12 +94,12 @@ describe("Testing UserService class", () => {
   it.each([
     [
       "Phone number already in use",
-      { ...mockUser, phone_number: "5561988888888" },
+      { ...mockUser, phone_number: "61988888888" },
       "Número de celular já utilizado.",
     ],
     [
       "Non conventional phone number",
-      { ...mockUser, phone_number: "5561988888881" },
+      { ...mockUser, phone_number: "6198888" },
       "Número de celular não convencional, seu número deve conter 1 código de país (opcional), 1 código de estado (opcional), 9 extra (opcional), número.",
     ],
   ])(
@@ -155,7 +155,7 @@ describe("Testing UserService class", () => {
   it.each([
     [
       "Phone number already in use",
-      { phone_number: "5561988888888" },
+      { phone_number: "61988888888" },
       "Número de celular já utilizado.",
     ],
     [
