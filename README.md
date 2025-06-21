@@ -133,7 +133,7 @@ npm run dev           # Start the node server
 ## 📊 Database Schema
 
 <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-  <img style="width: 500px;" src="images/image.png" alt="An image of the diagram for the database"/>
+  <img style="width: 500px;" src="github/images/image.png" alt="An image of the diagram for the database"/>
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Not completely implemented</p>
 </p>
 
@@ -286,7 +286,7 @@ npm run dev           # Inicia servidor Node
 ## 📊 Diagrama
 
 <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
-  <img style="width: 500px;" src="images/image.png" alt="Uma imagem do diagrama do banco de dados"/>
+  <img style="width: 500px;" src="github/images/image.png" alt="Uma imagem do diagrama do banco de dados"/>
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Não completamente implementado</p>
 </p>
 

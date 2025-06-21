@@ -1,7 +1,10 @@
 const { Router } = require("express");
 const PermissionController = require("../controllers/permissionController");
+const { auth } = require("../middleware");
 
 const router = Router()
+
+router.use(auth)
 
 router
   .get("/permissoes", PermissionController.pegarPermissoes)

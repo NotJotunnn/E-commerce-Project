@@ -23,8 +23,14 @@
 ## ...And the day after (20/06)
 
 - ✅ Test stuff out (finishing touches)
-- Start working on authentication
-- Start working on middlewares
+- ✅ Start working on authentication
+- ✅ Start working on middlewares
+
+## ...And the day after (21/06)
+
+- Figure out if there will be roles or permissions or both
+- Add new routes to README
+- Fix tests once done
 - Update fictional company name
 - Implement global purchase history
 
@@ -34,6 +40,8 @@
 - Work on Shopping cart addition
 - Implement the Frontend on NextJS
 - Start working on OAuth 2.0
+
+## To improve
 
 - Study more testing via Dockerfile
 - Implement GitHub Workflows for:

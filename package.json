@@ -5,15 +5,17 @@
   "scripts": {
     "dev": "nodemon .",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --forceExit",
+    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage",
     "test:product:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/productRoutes.test.js --forceExit",
     "test:product:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/productServices.test.js",
     "test:permission:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/permissionRoutes.test.js --forceExit",
     "test:permission:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/permissionServices.test.js",
+    "test:auth:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/authRoutes.test.js --forceExit",
+    "test:auth:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/authServices.test.js",
     "test:userpermission:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/userPermissionRoutes.test.js --forceExit",
     "test:userpermission:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/userPermissionServices.test.js",
     "test:user:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/userRoutes.test.js --forceExit",
     "test:user:services": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --verbose --testPathPatterns=src/tests/services/userServices.test.js",
-    "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles --coverage",
     "db:up": "docker compose up -d && sleep 2 && npx knex migrate:latest",
     "db:down": "docker compose down",
     "db:seed": "npx knex seed:run"
@@ -27,6 +29,7 @@
     "body-parser": "^2.2.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "knex": "^3.1.0",
     "pg": "^8.16.0",
     "uuid": "^11.1.0"
