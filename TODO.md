@@ -26,13 +26,18 @@
 - ✅ Start working on authentication
 - ✅ Start working on middlewares
 
-## ...And the day after (21/06)
+## ...And not the day after (21/06) (day off)
 
-- Figure out if there will be roles or permissions or both
-- Add new routes to README
+## ...And the day after (22/06)
+
+- ✅ Figure out if there will be roles or permissions or both
+  - ✅ I am going to lower the scope for 1 company selling on the e-commerce, 
+  for simplicity sake, will use permissions
+- ✅ Add new routes to README
 - Fix tests once done
 - Update fictional company name
 - Implement global purchase history
+- Test global purchase history
 
 ## For the future
 

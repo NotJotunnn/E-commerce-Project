@@ -78,7 +78,7 @@ npm run dev           # Start the node server
 - PUT /produtos/id/:id // Update product by id
 - DELETE /produtos/id/:id // Remove product by id
 
-##### Dados _necessários_ para POST
+##### _Necessary_ data for POST
 
 - title // Product title // String (Cannot have duplicates)
 - price // Product price // String (Cannot have symbols or letters like $ or R$)
@@ -95,10 +95,10 @@ npm run dev           # Start the node server
 - PUT /usuario/id/:id // Update user by id
 - DELETE /usuario/id/:id // Remove user by id
 
-##### Dados _necessários_ para POST
+##### _Necessary_ data for POST
 
 - name // User name // String
-- hash // User password (hashed) // String
+- hash // User password // String
 - email // User email // String (Cannot have duplicates)
 - phone_number // User phone number // String
 
@@ -110,7 +110,7 @@ npm run dev           # Start the node server
 - PUT /permissao/id/:id // Update permission by id
 - DELETE /permissao/id/:id // Remove permission by id
 
-##### Dados _necessários_ para POST
+##### _Necessary_ data for POST
 
 - name // Permission name // String
 - description // Permission desription // String
@@ -121,14 +121,28 @@ npm run dev           # Start the node server
 - POST /usuario-permissao // Register new permission for a user
 - POST /usuario-permissao/batch // Register new permissions in batch for a user id
 - GET /usuario-permissao/id/:id // Search permission by user id
-- PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Update permission by user id
 - DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permission by user id
-<!-- TODO Add new routes -->
 
-##### Dados _necessários_ para POST
+##### _Necessary_ data for POST
 
-- user_id // User id // UUID
-- permission_id // Permission id // UUID
+###### Base POST
+
+- user_id // id from user // UUID
+- permission_id // id from permission // UUID
+
+###### Batch POST
+
+- user_id // id from user // UUID
+- permission_id[] // permission id Array // UUID
+
+#### Main login routes
+
+- POST /auth/login // returns jwt token
+
+##### _Necessary_ data for POST
+
+- email // email utilized on signup // String
+- password // password used in signup // String
 
 ## 📊 Database Schema
 
@@ -251,7 +265,7 @@ npm run dev           # Inicia servidor Node
 ##### Dados _necessários_ para POST
 
 - name // nome do usuário // String
-- hash // senha do usuário (hasheada) // String
+- hash // senha do usuário // String
 - email // email do usuário // String (Não pode haver duplicatas)
 - phone_number // número do usuário // String
 
@@ -274,14 +288,28 @@ npm run dev           # Inicia servidor Node
 - POST /usuario-permissao // Registra nova permissão pro usuário
 - POST /usuario-permissao/batch // Registra permissões em lote para um usuário
 - GET /usuario-permissao/id/:id // Procura por permissões por id de usuário
-- PUT /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Atualiza permissão por id de usuário
 - DELETE /usuario-permissao/user_id/:user_id/permission_id/:permission_id // Remove permissão por id de usuário
-<!-- TODO Add new routes -->
 
 ##### Dados _necessários_ para POST
 
+###### POST base
+
 - user_id // id do usuário // UUID
 - permission_id // id da permissão // UUID
+
+###### POST batch
+
+- user_id // id do usuário // UUID
+- permission_id[] // Array de ids de permissões // UUID
+
+#### Rotas principais do login
+
+- POST /auth/login // retorna um jwt relacionado ao usuário
+
+##### Dados _necessários_ para POST
+
+- email // email utilizado no cadastro // String
+- password // senha usada no cadastro // String
 
 ## 📊 Diagrama
 
