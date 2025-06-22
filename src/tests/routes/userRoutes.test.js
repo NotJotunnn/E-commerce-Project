@@ -1,14 +1,21 @@
 const { describe, beforeAll, afterAll, it, expect } = require("@jest/globals");
 const request = require("supertest");
 const app = require("../..");
+const AuthService = require("../../services/authServices");
 require("dotenv").config();
 
 let server;
+let adminAuthToken;
+let userAuthToken;
 
 beforeAll(() => {
   server = app.listen(process.env.PORT, () =>
     console.log(`servidor está rodando na porta ${process.env.PORT}`)
   );
+});
+
+beforeAll(async () => {
+  adminAuthToken = await AuthService.login({ email: "demo@admin.com", password: "HORSE HORSE TEST CHICKEN" })
 });
 
 afterAll(() => {
@@ -27,6 +34,7 @@ describe("Testing user routes", () => {
     await request(app)
       .get("/usuarios")
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${adminAuthToken}`)
       .expect(200)
       .then((data) => data.body)
       .then((data) => {
@@ -57,12 +65,15 @@ describe("Testing user routes", () => {
         );
         mockUser.id = data.data.id;
       });
+
+      userAuthToken = await AuthService.login({ email: mockUser.email, password: mockUser.hash })
   });
 
   it("Testing route GET /usuarios/id/:id", async () => {
     await request(app)
       .get(`/usuarios/id/${mockUser.id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${userAuthToken}`)
       .expect(200)
       .then((data) => data.body)
       .then((data) => {
@@ -75,6 +86,7 @@ describe("Testing user routes", () => {
     await request(app)
       .put(`/usuarios/id/${mockUser.id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${userAuthToken}`)
       .send({ name: mockUser.name })
       .expect(200)
       .then((data) => data.body)
@@ -87,6 +99,7 @@ describe("Testing user routes", () => {
   it("Testing route DELETE /usuarios/id/:id", async () => {
     await request(app)
       .delete(`/usuarios/id/${mockUser.id}`)
+      .set("Authorization", `Bearer ${userAuthToken}`)
       .set("Accept", "application/json")
       .expect(200)
       .then((data) => data.body)

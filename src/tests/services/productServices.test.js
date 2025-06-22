@@ -57,6 +57,7 @@ describe("Testing productServices class.", () => {
     }
   );
 
+  // TODO alterar/adicionar método de pegar paginado e testar as queries
   it("Testing pegar method, should return at least an array with one value.", async () => {
     const products = await ProductServices.pegar();
 

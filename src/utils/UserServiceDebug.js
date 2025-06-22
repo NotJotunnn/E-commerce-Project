@@ -6,7 +6,7 @@ class UserServiceDebug {
     try {
       if (!email) throw new Error("Email não incluso.");
 
-      const user = await Database("users").where("email", email).select("id");
+      const user = await Database("users").where("email", email).select("id").first();
 
       if (!user) throw new Error("Usuário não cadastrado.");
 

@@ -2,13 +2,19 @@ const { beforeAll, afterAll, describe, it, expect } = require("@jest/globals");
 const app = require("../..");
 const request = require("supertest");
 const { PermissionServiceDebug } = require("../../utils");
+const AuthService = require("../../services/authServices");
 
 let server;
+let authToken;
 
 beforeAll(() => {
   server = app.listen(process.env.PORT, () =>
     console.log(`servidor está rodando na porta ${process.env.PORT}`)
   );
+});
+
+beforeAll(async () => {
+  authToken = await AuthService.login({ email: "demo@admin.com", password: "HORSE HORSE TEST CHICKEN" })
 });
 
 afterAll(() => {
@@ -25,6 +31,7 @@ describe("Testing permission Routes", () => {
     await request(app)
       .get("/permissoes")
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .expect(200)
       .then(data => {
         expect(data.body.message).toBe("Permissões pegas com sucesso.")
@@ -36,6 +43,7 @@ describe("Testing permission Routes", () => {
     await request(app)
       .post("/permissoes")
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .send(mockPermission)
       .expect(201)
       .then(data => {
@@ -53,6 +61,7 @@ describe("Testing permission Routes", () => {
     await request(app)
       .get(`/permissoes/id/${permission[0].id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .expect(200)
       .then(data => {
         expect(data.body.message).toBe("Permissão pega por id com sucesso.")
@@ -69,6 +78,7 @@ describe("Testing permission Routes", () => {
     await request(app)
       .put(`/permissoes/id/${permission[0].id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .send({...mockPermission, name: "Create Carro"})
       .expect(200)
       .then(data => {
@@ -87,6 +97,7 @@ describe("Testing permission Routes", () => {
     await request(app)
       .delete(`/permissoes/id/${permission[0].id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .expect(200)
       .then(data => {
         expect(data.body.message).toBe("Permissão deletada com sucesso.")

@@ -5,9 +5,11 @@ const request = require("supertest");
 const ProductServices = require("../../services/productServices");
 const { v4: uuidV4 } = require("uuid");
 const { ProductServiceDebug } = require("../../utils");
+const AuthService = require("../../services/authServices");
 require("dotenv").config();
 
 let server;
+let authToken;
 
 beforeAll(() => {
   server = app.listen(process.env.PORT, () =>
@@ -21,6 +23,8 @@ beforeAll(async () => {
   for(const mockItem of mockData) {
     await ProductServices.deletar(mockItem.id)
   }
+
+  authToken = await AuthService.login({ email: "demo@admin.com", password: "HORSE HORSE TEST CHICKEN" })
 })
 
 afterAll(() => {
@@ -37,6 +41,7 @@ describe("Testing Product routes", () => {
     availability: true,
   };
 
+  // TODO atualizar para utilizar queries
   it("Testing GET /produtos", async () => {
     await request(app)
       .get("/produtos")
@@ -65,6 +70,7 @@ describe("Testing Product routes", () => {
     await request(app)
       .post("/produtos")
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .send(productMock)
       .expect(201)
       .then((response) => {
@@ -99,6 +105,7 @@ describe("Testing Product routes", () => {
       await request(app)
         .post("/produtos")
         .set("Accept", "application/json")
+        .set("Authorization", `Bearer ${authToken}`)
         .send(productValue)
         .expect(400)
         .then((response) => {
@@ -157,6 +164,7 @@ describe("Testing Product routes", () => {
     await request(app)
       .put(`/produtos/id/${product[0].id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .send(productMock)
       .expect(200)
       .then((response) => {
@@ -176,6 +184,7 @@ describe("Testing Product routes", () => {
     await request(app)
       .put(`/produtos/id/${uuidV4()}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .send({})
       .expect(400)
       .then((response) => {
@@ -189,6 +198,7 @@ describe("Testing Product routes", () => {
     await request(app)
       .delete(`/produtos/id/${product[0].id}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .expect(200)
       .then((response) => {
         expect(response.body.message).toEqual("Produto deletado com sucesso");
@@ -199,6 +209,7 @@ describe("Testing Product routes", () => {
     await request(app)
       .delete(`/produtos/id/${uuidV4()}`)
       .set("Accept", "application/json")
+      .set("Authorization", `Bearer ${authToken}`)
       .expect(400)
       .then((response) => {
         expect(response.body.message).toEqual("Não foi possível deletar dessa vez: Produto não cadastrado.");

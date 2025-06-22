@@ -1,22 +1,14 @@
 const Database = require("../../Knex/database");
-const { afterAll, describe, it, expect, beforeEach } = require("@jest/globals");
+const { afterAll, describe, it, expect } = require("@jest/globals");
 const UserService = require("../../services/userServices");
 const UserServiceDebug = require("../../utils/UserServiceDebug");
 const { v4: uuidV4 } = require("uuid")
 
-beforeEach(async () => {
-  const mockUserDataIdArray = await UserServiceDebug.pegarPorEmail(
-    "test2@test.com"
-  );
+// afterAll(async () => {
+//   const userDataId = await UserServiceDebug.pegarPorEmail("test2@test.com");
 
-  const demoEmail = await UserServiceDebug.pegarPorEmail("demo@test.com");
-
-  await UserService.atualizar(demoEmail[0].id, { name: "demo" });
-
-  for (const userDataId of mockUserDataIdArray) {
-    await UserService.deletar(userDataId.id);
-  }
-});
+//   await UserService.deletar(userDataId.id);
+// });
 
 afterAll(() => {
   Database.destroy();
@@ -104,10 +96,14 @@ describe("Testing UserService class", () => {
     ],
   ])(
     "Testing cadastrar method, should return a phone error, step %s",
-    async (name, mockUser, errorMessage) => {
-      const newUser = UserService.cadastrar(mockUser);
-
+    async (name, mockUserTest, errorMessage) => {
+      const getMockUserId = (await UserServiceDebug.pegarPorEmail(mockUserTest.email)).id
+      await UserService.deletar(getMockUserId);
+      const newUser = UserService.cadastrar(mockUserTest);
+      
       await expect(newUser).rejects.toThrow(errorMessage);
+      
+      await UserService.cadastrar(mockUser);
     }
   );
 
@@ -127,11 +123,11 @@ describe("Testing UserService class", () => {
   });
 
   it("Testing atualizar method, should return an updated user wihout hash", async () => {
-    const users = await UserService.pegar();
-    const user = await UserService.atualizar(users[0].id, { name: "Carlos" });
+    const userTest = (await UserService.pegar()).find(user => user.name == "Teste");
+    const user = await UserService.atualizar(userTest.id, { name: "Carlos" });
 
     expect(user.name).toEqual("Carlos");
-    expect(user.name).not.toEqual(users[0].name);
+    expect(user.name).not.toEqual(userTest.name);
     expect(user.hash).toBeUndefined();
   });
 
@@ -174,10 +170,11 @@ describe("Testing UserService class", () => {
   );
 
   it("Testing deletar method", async () => {
-    const newUser = await UserService.cadastrar(mockUser)
-    await UserService.deletar(newUser.id)
+    const mockUserId = (await UserServiceDebug.pegarPorEmail(mockUser.email)).id
 
-    const userExist = UserService.pegarPorId(newUser.id)
+    await UserService.deletar(mockUserId)
+
+    const userExist = UserService.pegarPorId(mockUserId)
 
     await expect(userExist).rejects.toThrow("Não foi possível pegar usuário por id: Usuário não cadastrado.")
   })

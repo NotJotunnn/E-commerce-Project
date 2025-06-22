@@ -8,7 +8,7 @@ require("dotenv").config();
 let server;
 let mockUser;
 let token;
-let demoToken;
+let adminAuthToken;
 
 beforeAll(() => {
   server = app.listen(process.env.PORT, () =>
@@ -20,12 +20,12 @@ beforeAll(async () => {
   mockUser = await UserService.cadastrar({
     name: "Carlos",
     hash: "123123123",
-    email: "Carlos@carlos.com",
+    email: "Carlos3@carlos.com",
     phone_number: "61988888884",
   });
 
-  demoToken = await AuthService.login({
-    email: "demo@test.com",
+  adminAuthToken = await AuthService.login({
+    email: "demo@admin.com",
     password: "HORSE HORSE TEST CHICKEN",
   });
 });
@@ -91,7 +91,7 @@ describe("Testing auth routes", () => {
     await request(app)
       .get("/usuarios")
       .set("Accept", "application/json")
-      .set("Authorization", `Bearer ${demoToken}`)
+      .set("Authorization", `Bearer ${adminAuthToken}`)
       .expect(200)
       .then((data) => data.body)
       .then((data) => {

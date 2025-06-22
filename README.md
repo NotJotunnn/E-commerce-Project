@@ -149,6 +149,7 @@ npm run dev           # Start the node server
 <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
   <img style="width: 500px;" src="github/images/image.png" alt="An image of the diagram for the database"/>
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Not completely implemented</p>
+  <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Diagram made in https://dbdiagram.io/d</p>
 </p>
 
 ## 📝 Developer Note
@@ -316,6 +317,7 @@ npm run dev           # Inicia servidor Node
 <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
   <img style="width: 500px;" src="github/images/image.png" alt="Uma imagem do diagrama do banco de dados"/>
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Não completamente implementado</p>
+  <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Diagrama feito em https://dbdiagram.io/d</p>
 </p>
 
 ## 📝 Nota do Desenvolvedor

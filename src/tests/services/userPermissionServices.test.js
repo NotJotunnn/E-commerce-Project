@@ -15,7 +15,7 @@ beforeAll(async () => {
 })
 
 afterAll(async () => {
-  const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
+  const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com")).id
 
   await UserService.deletar(userId)
 })
@@ -26,7 +26,7 @@ afterAll(() => {
 
 describe("Testing UserPermissionService class", () => {
   it("Testing cadastrar method", async () => {
-    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
+    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com")).id
     const permissionId = (await PermissionService.pegar())[0].id
 
     const userPermission = await UserPermissionService.cadastrar({ user_id: userId, permission_id: permissionId })
@@ -50,7 +50,7 @@ describe("Testing UserPermissionService class", () => {
   })
 
   it("Testing pegarPeloId method", async () => {
-    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
+    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com")).id
     const permissionId = (await PermissionService.pegar())[0].id
 
     const userPermission = await UserPermissionService.pegarPorId(userId, permissionId)
@@ -68,7 +68,7 @@ describe("Testing UserPermissionService class", () => {
   })
 
   it("Testing deletar method", async () => {
-    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com"))[0].id
+    const userId = (await UserServiceDebug.pegarPorEmail("Carlos@carlos.com")).id
     const permissionId = (await PermissionService.pegar())[0].id
 
     await UserPermissionService.deletar({ user_id: userId, permission_id: permissionId})

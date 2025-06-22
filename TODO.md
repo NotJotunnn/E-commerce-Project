@@ -42,6 +42,9 @@
 ## For the future
 
 - Design the Frontend on Figma
+  - Decide user flow
+  - Develop Wireframe (references)
+  - Design thinking (colors, font)
 - Work on Shopping cart addition
 - Implement the Frontend on NextJS
 - Start working on OAuth 2.0
