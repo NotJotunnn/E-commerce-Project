@@ -34,9 +34,9 @@
   - ✅ I am going to lower the scope for 1 company selling on the e-commerce, 
   for simplicity sake, will use permissions
 - ✅ Add new routes to README
-- Fix tests once done
+- ✅ Fix tests once done
 - Update fictional company name
-- Implement global purchase history
+- ✅ Implement global purchase history
 - Test global purchase history
 
 ## For the future

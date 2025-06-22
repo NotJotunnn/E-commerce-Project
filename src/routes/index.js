@@ -3,6 +3,7 @@ const products = require("./productRoutes");
 const users = require("./userRoutes");
 const permissions = require("./permissionRoutes");
 const userPermissions = require("./userPermissionsRoutes");
+const purchase = require("./purchaseRoute")
 const auth = require("./authRoutes");
 
 module.exports = (app) => {
@@ -10,6 +11,7 @@ module.exports = (app) => {
     bodyParser.json(),
     products,
     users,
+    purchase,
     auth,
     permissions,
     userPermissions
