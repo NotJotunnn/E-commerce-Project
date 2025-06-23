@@ -3,7 +3,7 @@ const products = require("./productRoutes");
 const users = require("./userRoutes");
 const permissions = require("./permissionRoutes");
 const userPermissions = require("./userPermissionsRoutes");
-const purchase = require("./purchaseRoute")
+const purchase = require("./purchaseRoutes")
 const auth = require("./authRoutes");
 
 module.exports = (app) => {

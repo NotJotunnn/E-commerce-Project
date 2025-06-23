@@ -1,5 +1,5 @@
 const { describe, it, expect, afterAll, beforeAll } = require("@jest/globals");
-const ProductServices = require("../../services/productServices");
+const ProductService = require("../../services/productServices");
 const Database = require("../../Knex/database");
 const { v4: uuidV4 } = require("uuid");
 const ProductServiceDebug = require("../../utils/productServiceDebug");
@@ -12,14 +12,14 @@ beforeAll(async () => {
   const mockData = await ProductServiceDebug.pegarPorTitle("Carro5")
 
   for(const mockItem of mockData) {
-    await ProductServices.deletar(mockItem.id)
+    await ProductService.deletar(mockItem.id)
   }
 }, 5000)
 
 describe("Testing productServices class.", () => {
   const debugProduct = {
     title: "Carro5",
-    price: "1.000",
+    price: 1000,
     currency: "BRL",
     rating: "5.0/5",
     quantity: 10,
@@ -27,7 +27,7 @@ describe("Testing productServices class.", () => {
   };
 
   it("Testing cadastrar method, should return a new product object", async () => {
-    const newProduct = await ProductServices.cadastrar(debugProduct);
+    const newProduct = await ProductService.cadastrar(debugProduct);
 
     expect(newProduct).toEqual(
       expect.objectContaining({
@@ -41,7 +41,7 @@ describe("Testing productServices class.", () => {
 
   it.each([
     ["title", { ...debugProduct, title: "" }],
-    ["price", { ...debugProduct, price: "" }],
+    ["price", { ...debugProduct, price: 0 }],
     ["currency", { ...debugProduct, currency: "" }],
     ["rating", { ...debugProduct, rating: "" }],
     ["quantity", { ...debugProduct, quantity: 0 }],
@@ -49,7 +49,7 @@ describe("Testing productServices class.", () => {
   ])(
     "Testing cadastrar method lacking %s parameter, should return an error",
     async (name, product) => {
-      const newProduct = ProductServices.cadastrar(product);
+      const newProduct = ProductService.cadastrar(product);
 
       await expect(newProduct).rejects.toThrow(
         `Não foi possível cadastrar dessa vez: Campos 'title', 'price', 'currency', 'rating', 'quantity', 'availability' não podem estar vazios.`
@@ -59,14 +59,14 @@ describe("Testing productServices class.", () => {
 
   // TODO alterar/adicionar método de pegar paginado e testar as queries
   it("Testing pegar method, should return at least an array with one value.", async () => {
-    const products = await ProductServices.pegar();
+    const products = await ProductService.pegar();
 
     expect(products.length).toBeGreaterThan(0);
     expect(products[0]).toEqual(
       expect.objectContaining({
         id: expect.any(String),
         title: expect.any(String),
-        price: expect.any(String),
+        price: expect.any(Number),
         currency: expect.any(String),
         rating: expect.any(String),
         quantity: expect.any(Number),
@@ -78,15 +78,15 @@ describe("Testing productServices class.", () => {
   });
 
   it("Testing pegarPorId method, should return an object.", async () => {
-    const products = await ProductServices.pegar();
+    const products = await ProductService.pegar();
 
-    const product = await ProductServices.pegarPorId(products[0].id);
+    const product = await ProductService.pegarPorId(products[0].id);
 
     expect(product).toEqual(
       expect.objectContaining({
         id: expect.any(String),
         title: expect.any(String),
-        price: expect.any(String),
+        price: expect.any(Number),
         currency: expect.any(String),
         rating: expect.any(String),
         quantity: expect.any(Number),
@@ -99,7 +99,7 @@ describe("Testing productServices class.", () => {
 
   it.each([
     ["title", { title: "Carro2" }],
-    ["price", { price: "2.000" }],
+    ["price", { price: 2000 }],
     ["currency", { currency: "USD" }],
     ["rating", { rating: "0.0/5" }],
     ["quantity", { quantity: 0 }],
@@ -107,9 +107,9 @@ describe("Testing productServices class.", () => {
   ])(
     "Testing atualizar method, should return an updated object with updated %s parameter.",
     async (name, updatedProductValues) => {
-      const products = await ProductServices.pegar();
+      const products = await ProductService.pegar();
 
-      const { id, title, price, currency, rating, quantity, availability } = await ProductServices.pegarPorId(
+      const { id, title, price, currency, rating, quantity, availability } = await ProductService.pegarPorId(
         products[0].id
       );
 
@@ -117,7 +117,7 @@ describe("Testing productServices class.", () => {
         title, price, currency, rating, quantity, availability
       }
 
-      const updatedProduct = await ProductServices.atualizar(id, {
+      const updatedProduct = await ProductService.atualizar(id, {
         ...product,
         ...updatedProductValues,
       });
@@ -135,9 +135,9 @@ describe("Testing productServices class.", () => {
   );
 
   it("Testing atualizar method, should return an error.", async () => {
-    const products = await ProductServices.pegar();
+    const products = await ProductService.pegar();
 
-    const updatedProduct = ProductServices.atualizar(uuidV4(), {
+    const updatedProduct = ProductService.atualizar(uuidV4(), {
       ...products[0],
       title: "Carro2",
     });
@@ -148,9 +148,9 @@ describe("Testing productServices class.", () => {
   });
 
   it("Testing deletar method, should return a string", async () => {
-    const products = await ProductServices.pegar();
+    const products = await ProductService.pegar();
 
-    const product = await ProductServices.deletar(
+    const product = await ProductService.deletar(
       products[0].id
     );
 
@@ -158,7 +158,7 @@ describe("Testing productServices class.", () => {
   });
 
   it("Testing deletar method, should return an error", async () => {
-    const product = ProductServices.deletar(uuidV4());
+    const product = ProductService.deletar(uuidV4());
 
     await expect(product).rejects.toThrow(
       "Não foi possível deletar dessa vez: Produto não cadastrado."

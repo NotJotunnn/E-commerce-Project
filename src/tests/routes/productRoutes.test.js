@@ -2,7 +2,7 @@
 const { beforeAll, afterAll, describe, it } = require("@jest/globals");
 const app = require("../../index");
 const request = require("supertest");
-const ProductServices = require("../../services/productServices");
+const ProductService = require("../../services/productServices");
 const { v4: uuidV4 } = require("uuid");
 const { ProductServiceDebug } = require("../../utils");
 const AuthService = require("../../services/authServices");
@@ -21,7 +21,7 @@ beforeAll(async () => {
   const mockData = await ProductServiceDebug.pegarPorTitle("Carro5")
 
   for(const mockItem of mockData) {
-    await ProductServices.deletar(mockItem.id)
+    await ProductService.deletar(mockItem.id)
   }
 
   authToken = await AuthService.login({ email: "demo@admin.com", password: "HORSE HORSE TEST CHICKEN" })
@@ -34,7 +34,7 @@ afterAll(() => {
 describe("Testing Product routes", () => {
   const productMock = {
     title: "Carro5",
-    price: "1.000",
+    price: 1000,
     currency: "BRL",
     rating: "5.0/5",
     quantity: 10,
@@ -54,7 +54,7 @@ describe("Testing Product routes", () => {
           expect.objectContaining({
             id: expect.any(String),
             title: expect.any(String),
-            price: expect.any(String),
+            price: expect.any(Number),
             currency: expect.any(String),
             rating: expect.any(String),
             quantity: expect.any(Number),
@@ -81,7 +81,7 @@ describe("Testing Product routes", () => {
           expect.objectContaining({
             id: expect.any(String),
             title: expect.any(String),
-            price: expect.any(String),
+            price: expect.any(Number),
             currency: expect.any(String),
             rating: expect.any(String),
             quantity: expect.any(Number),
@@ -95,7 +95,7 @@ describe("Testing Product routes", () => {
 
   it.each([
     ["Title", { ...productMock, title: "" }],
-    ["Price", { ...productMock, price: "" }],
+    ["Price", { ...productMock, price: 0 }],
     ["Currency", { ...productMock, currency: "" }],
     ["Rating", { ...productMock, rating: "" }],
     ["Quantity", { ...productMock, quantity: 0 }],
@@ -117,7 +117,7 @@ describe("Testing Product routes", () => {
   );
 
   it("Testing GET /produtos/id", async () => {
-    const product = await ProductServices.pegar();
+    const product = await ProductService.pegar();
 
     await request(app)
       .get(`/produtos/id/${product[0].id}`)
@@ -152,14 +152,14 @@ describe("Testing Product routes", () => {
   it("Testing PUT /produtos/id", async () => {
     const productMock = {
       title: "Carro",
-      price: "1.000",
+      price: 1000,
       currency: "BRL",
       rating: "5.0/5",
       quantity: 10,
       availability: true,
     };
 
-    const product = await ProductServices.pegar();
+    const product = await ProductService.pegar();
 
     await request(app)
       .put(`/produtos/id/${product[0].id}`)
@@ -193,7 +193,7 @@ describe("Testing Product routes", () => {
   });
 
   it("Testing DELETE /produtos/id", async () => {
-    const product = await ProductServices.pegar();
+    const product = await ProductService.pegar();
 
     await request(app)
       .delete(`/produtos/id/${product[0].id}`)

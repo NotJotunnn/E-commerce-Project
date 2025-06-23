@@ -4,12 +4,6 @@ const UserService = require("../../services/userServices");
 const UserServiceDebug = require("../../utils/UserServiceDebug");
 const { v4: uuidV4 } = require("uuid")
 
-// afterAll(async () => {
-//   const userDataId = await UserServiceDebug.pegarPorEmail("test2@test.com");
-
-//   await UserService.deletar(userDataId.id);
-// });
-
 afterAll(() => {
   Database.destroy();
 });

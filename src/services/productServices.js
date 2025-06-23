@@ -1,16 +1,16 @@
 const Database = require("../Knex/database");
 const { v4: uuidV4 } = require("uuid")
 
-class ProductServices {
+class ProductService {
   static async cadastrar(dto) {
     try {
       if (
         !dto ||
         !dto.title ||
-        !dto.price ||
+        dto.price === 0 ||
         !dto.currency ||
         !dto.rating ||
-        dto.quantity == 0 ||
+        dto.quantity === 0 ||
         dto.availability === null
       ) {
         throw new Error(
@@ -26,7 +26,7 @@ class ProductServices {
 
       if (productAlreadyExists) throw new Error("Produto já cadastrado.");
 
-      await Database("products").insert({...dto, id});
+      await Database("products").insert({...dto, id, currency: dto.currency.toUpperCase()});
 
       return await Database("products").where("id", id).first();
     } catch (err) {
@@ -102,4 +102,4 @@ class ProductServices {
   }
 }
 
-module.exports = ProductServices;
+module.exports = ProductService;

@@ -1,11 +1,11 @@
-const ProductServices = require("../services/productServices");
+const ProductService = require("../services/productServices");
 
 class ProductController {
   static async cadastrarProduto(req, res) {
     const { title, price, currency, rating, quantity, availability } = req.body;
 
     try {
-      const product = await ProductServices.cadastrar({
+      const product = await ProductService.cadastrar({
         title,
         price,
         currency,
@@ -24,7 +24,7 @@ class ProductController {
 
   static async pegarProdutos(_, res) {
     try {
-      const products = await ProductServices.pegar();
+      const products = await ProductService.pegar();
 
       res
         .status(200)
@@ -39,10 +39,10 @@ class ProductController {
 
     const resultsLimit = Math.min(parseInt(limit), 80);
     const pageCounter = Math.max(parseInt(page), 1);
-    const amountOfPages = await ProductServices.pegar()
+    const amountOfPages = await ProductService.pegar()
 
     try {
-      const products = await ProductServices.pegarPaginado(
+      const products = await ProductService.pegarPaginado(
         resultsLimit,
         pageCounter
       );
@@ -73,7 +73,7 @@ class ProductController {
     const { id } = req.params;
 
     try {
-      const product = await ProductServices.pegarPorId(id);
+      const product = await ProductService.pegarPorId(id);
 
       res
         .status(200)
@@ -87,7 +87,7 @@ class ProductController {
     const { id } = req.params;
 
     try {
-      const updatedProduct = await ProductServices.atualizar(id, req.body);
+      const updatedProduct = await ProductService.atualizar(id, req.body);
 
       res.status(200).send({
         message: "Produto atualizado com sucesso",
@@ -102,7 +102,7 @@ class ProductController {
     const { id } = req.params;
 
     try {
-      await ProductServices.deletar(id);
+      await ProductService.deletar(id);
 
       res
         .status(200)

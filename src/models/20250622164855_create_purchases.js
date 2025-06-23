@@ -17,8 +17,8 @@ exports.up = function (knex) {
       .references("id")
       .inTable("products")
       .onDelete("CASCADE");
-    table.string("total_price").notNullable();
-    table.string("price_per_unit").notNullable();
+    table.float("price_per_unit").notNullable();
+    table.float("total_price").notNullable();
     table.string("status").notNullable();
     table.string("payment_method").notNullable();
     table.integer("quantity").notNullable();

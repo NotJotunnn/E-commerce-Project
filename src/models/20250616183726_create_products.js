@@ -6,7 +6,7 @@ exports.up = function (knex) {
   return knex.schema.createTable("products", (table) => {
     table.uuid("id").primary();
     table.string("title").notNullable();
-    table.string("price").notNullable();
+    table.float("price").notNullable();
     table.string("currency").notNullable();
     table.string("rating").notNullable();
     table.integer("quantity").notNullable();

@@ -35,9 +35,13 @@
   for simplicity sake, will use permissions
 - ✅ Add new routes to README
 - ✅ Fix tests once done
-- Update fictional company name
 - ✅ Implement global purchase history
-- Test global purchase history
+
+## ...And the day after (23/06)
+
+- ✅ Test global purchase history
+- ✅ Fix major typo
+- Update fictional company name
 
 ## For the future
 

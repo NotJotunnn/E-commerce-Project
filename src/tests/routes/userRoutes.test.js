@@ -26,8 +26,8 @@ describe("Testing user routes", () => {
   const mockUser = {
     name: "Teste",
     hash: "123123123",
-    email: "test2@test.com",
-    phone_number: "+55 (61) 988888888",
+    email: "test4@test.com",
+    phone_number: "+55 (61) 988888555",
   };
 
   it("Testing route GET /usuarios", async () => {

@@ -21,7 +21,7 @@ beforeAll(async () => {
     name: "Carlos",
     hash: "123123123",
     email: "Carlos3@carlos.com",
-    phone_number: "61988888884",
+    phone_number: "61988888444",
   });
 
   adminAuthToken = await AuthService.login({

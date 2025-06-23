@@ -1,7 +1,7 @@
 const Database = require("../Knex/database");
 const PurchaseValidation = require("../utils/purchaseValidation");
 const { v4: uuidV4 } = require("uuid");
-const ProductServices = require("./productServices");
+const ProductService = require("./productServices");
 
 class PurchaseService {
   static async pegar() {
@@ -18,8 +18,8 @@ class PurchaseService {
         !dto ||
         !dto.user_id ||
         !dto.product_id ||
-        !dto.total_price ||
-        !dto.price_per_unit ||
+        dto.total_price === 0 ||
+        dto.price_per_unit === 0 ||
         !dto.payment_method ||
         !dto.quantity
       ) {
@@ -32,9 +32,9 @@ class PurchaseService {
 
       const id = uuidV4();
 
-      const product = await ProductServices.pegarPorId(dto.product_id);
+      const product = await ProductService.pegarPorId(dto.product_id);
 
-      await ProductServices.atualizar(dto.product_id, {
+      await ProductService.atualizar(dto.product_id, {
         quantity: product.quantity - dto.quantity,
         availability: product.quantity - dto.quantity > 0 ? true : false,
       });
@@ -53,7 +53,11 @@ class PurchaseService {
     try {
       if (!id) throw new Error("Id não incluso.");
 
-      return await Database("purchases").where({ id }).first();
+      const purchase = await Database("purchases").where({ id }).first();
+
+      if(!purchase) throw new Error("Compra não registrada.");
+
+      return purchase
     } catch (err) {
       throw new Error(`Não foi possível pegar compra por id: ${err.message}`);
     }
@@ -62,6 +66,10 @@ class PurchaseService {
   static async pegarPorUserId(id) {
     try {
       if (!id) throw new Error("Id de usuário não incluso.");
+
+      const user = await Database("users").where({ id: id }).first()
+
+      if(!user) throw new Error("Usuário não cadastrado.");
 
       return await Database("purchases").where({ user_id: id });
     } catch (err) {
@@ -72,6 +80,10 @@ class PurchaseService {
   static async atualizar(id, dto) {
     try {
       if (!id) throw new Error("Id não incluso.");
+
+      const purchase = await Database("purchases").where({ id }).first()
+
+      if(!purchase) throw new Error("Compra não cadastrada.")
 
       await PurchaseValidation.validarCompra(dto);
 
