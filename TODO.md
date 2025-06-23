@@ -41,7 +41,7 @@
 
 - ✅ Test global purchase history
 - ✅ Fix major typo
-- Update fictional company name
+- ✅ Update fictional company name
 
 ## For the future
 

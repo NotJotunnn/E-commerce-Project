@@ -1,6 +1,7 @@
 # Church Audio Gear Marketplace
 
-_Full-stack e-commerce prototype for professional audio equipment_
+<p style="width: 100%; font-style: italic; text-align: center;">Full-stack e-commerce prototype for professional audio equipment</p>
+<p style="width: 100%; font-style: italic; opacity: 50%; text-align: center;">Based on a company located in Brazil (KRS conectividade)</p>
 
 ## 📌 Project Overview
 
@@ -81,10 +82,10 @@ npm run dev           # Start the node server
 ##### _Necessary_ data for POST
 
 - title // Product title // String (Cannot have duplicates)
-- price // Product price // String (Cannot have symbols or letters like $ or R$)
+- price // Product price // Float
 - currency // Products currency // String (Accepts BRL - Brazilian real, USD - US Dollar, CAD - Canadian Dollar)
 - rating // Products rating // String (Accepts 5.0/5)
-- quantity // Products quantity // Number
+- quantity // Products quantity // Integer
 - availability // Products availability // Boolean
 
 #### Main user routes:
@@ -144,6 +145,21 @@ npm run dev           # Start the node server
 - email // email utilized on signup // String
 - password // password used in signup // String
 
+#### Main purchases routes:
+
+- GET /history // List all purchases by user currently authenticated
+- POST /history // Register new purchase
+- GET /history/global // List all global purchases
+- PUT /history/id/:id // Update purchase via id
+
+##### _Necessary_ data for POST
+
+- product_id // id from product // UUID
+- price_per_unit // unit price // Float
+- total_price // unit price * quantity // Float
+- payment_method // PIX, DEBIT CARD or CREDIT CARD / String
+- quantity // number of products // Integer 
+
 ## 📊 Database Schema
 
 <p style="display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%;">
@@ -168,7 +184,8 @@ MIT
 
 # Marketplace de Equipamentos de Áudio para Igrejas
 
-_Protótipo full-stack de e-commerce para equipamentos de áudio profissional_
+<p style="width: 100%; font-style: italic; text-align: center;">Protótipo full-stack de e-commerce para equipamentos de áudio profissional</p>
+<p style="width: 100%; font-style: italic; opacity: 50%; text-align: center;">Baseado em uma empresa localizada no Brasil (KRS conectividade)</p>
 
 ## 📌 Visão Geral do Projeto
 
@@ -249,10 +266,10 @@ npm run dev           # Inicia servidor Node
 ##### Dados _necessários_ para POST
 
 - title // título do produto // String (Não pode haver duplicatas)
-- price // preço do produto // String (Sem sinais ou letras como $, R$ ou equivalente)
+- price // preço do produto // Integer
 - currency // moeda usada no produto // String (Aceita BRL - Brazilian real, USD - US Dollar, CAD - Canadian Dollar)
 - rating // avaliação do produto // String (Aceita 5.0/5)
-- quantity // quantidade do produto // Number
+- quantity // quantidade do produto // Integer
 - availability // disponibilidade do produto // Boolean
 
 #### Rotas principais de usuário:
@@ -311,6 +328,21 @@ npm run dev           # Inicia servidor Node
 
 - email // email utilizado no cadastro // String
 - password // senha usada no cadastro // String
+
+#### Rotas principais das compras:
+
+- GET /history // Lista todas as compras do usuário autenticado
+- POST /history // Registra nova compra
+- GET /history/global // Lista todas as compras globais
+- PUT /history/id/:id // Atualiza compra via id
+
+##### _Necessary_ data for POST
+
+- product_id // id do produto // UUID
+- price_per_unit // preço unitário // Float
+- total_price // preço unitário * quantidade // Float
+- payment_method // PIX, DEBIT CARD ou CREDIT CARD / String
+- quantity // Número de produtos // Integer 
 
 ## 📊 Diagrama
 
