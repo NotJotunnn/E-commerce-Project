@@ -43,15 +43,31 @@
 - ✅ Fix major typo
 - ✅ Update fictional company name
 
+## ...And the day after (24/06 --> 02/07)
+
+- ✅ Studying Frontend technologies
+  - ✅ React router
+  - ✅ React redux
+  - ✅ Redux Toolkit
+
 ## For the future
 
-- Design the Frontend on Figma
+- Design the Frontend on Figma:
   - Decide user flow
   - Develop Wireframe (references)
   - Design thinking (colors, font)
-- Work on Shopping cart addition
-- Implement the Frontend on NextJS
+- Work on pages:
+  - Home
+  - Profile
+  - Settings (later)
+  - Shopping cart
+  - Admin dashboard
 - Start working on OAuth 2.0
+- Code migration:
+  - back end
+    - Typescript everywhere
+  - front end
+    - NextJs
 
 ## To improve
 
