@@ -31,8 +31,8 @@
 ## ...And the day after (22/06)
 
 - ✅ Figure out if there will be roles or permissions or both
-  - ✅ I am going to lower the scope for 1 company selling on the e-commerce, 
-  for simplicity sake, will use permissions
+  - ✅ I am going to lower the scope for 1 company selling on the e-commerce,
+    for simplicity sake, will use permissions
 - ✅ Add new routes to README
 - ✅ Fix tests once done
 - ✅ Implement global purchase history
@@ -50,28 +50,38 @@
   - ✅ React redux
   - ✅ Redux Toolkit
 
+## ...And the day after (02/07 --> 14/07)
+
+- ✅ Developing personal Portfólio
+
 ## For the future
 
 - Design the Frontend on Figma:
-  - Decide user flow
-  - Develop Wireframe (references)
-  - Design thinking (colors, font)
+  - ✅ Decide user flow
+    - ✅ Capture user needs via conversations
+  - <span style="text-decoration: line-through;">Develop Wireframe (references)</span>
+    - <span style="text-decoration: line-through;">Homepage</span>
+    - <span style="text-decoration: line-through;">Profile</span>
+    - <span style="text-decoration: line-through;">Settings (later)</span>
+    - <span style="text-decoration: line-through;">Shopping cart</span>
+    - <span style="text-decoration: line-through;">Admin panel</span>
+  - <span style="text-decoration: line-through;">Design thinking (colors, font)</span>
 - Work on pages:
-  - Home
+  - Homepage
   - Profile
   - Settings (later)
   - Shopping cart
-  - Admin dashboard
+  - Admin panel
 - Start working on OAuth 2.0
-- Code migration:
-  - back end
-    - Typescript everywhere
-  - front end
-    - NextJs
 
 ## To improve
 
 - Study more testing via Dockerfile
 - Implement GitHub Workflows for:
-  - Pré-PR run tests
   - Pré-PR run eslint
+  - Pré-PR run tests
+- Code migration:
+  - back end
+    - Typescript everywhere
+  - front end
+    - NextJs
