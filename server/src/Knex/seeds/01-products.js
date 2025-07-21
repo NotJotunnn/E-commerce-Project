@@ -3,20 +3,11 @@
  * @returns { Promise<void> }
  */
 
-const rawData = require("../backup/seed.json");
+const fs = require("fs");
+const rawData = fs.readFileSync("./src/Knex/seed.json");
+const products = JSON.parse(rawData);
 
 exports.seed = async function (knex) {
-  const products = rawData.map((product) => ({
-    id: product.id,
-    title: product.title,
-    price: product.price,
-    rating: product.rating,
-    currency: product.currency,
-    availability: product.availability,
-    quantity: product.quantity,
-    image_filename: product.image_filename,
-  }));
-
   await knex("products").del();
-  await knex.batchInsert("products", products, 100);
+  await knex("products").insert(products);
 };

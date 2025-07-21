@@ -56,7 +56,6 @@
 
 ## For the future
 
-- Create basic CRUD for the images in upload
 - Design the Frontend on Figma:
   - ✅ Decide user flow
     - ✅ Capture user needs via conversations

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "./server.js",
   "scripts": {
-    "dev": "nodemon ./server.js",
+    "dev": "nodemon .",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --forceExit",
     "test:coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage",
     "test:product:routes": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose --testPathPatterns=src/tests/routes/productRoutes.test.js --forceExit",

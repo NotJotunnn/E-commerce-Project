@@ -11,7 +11,6 @@ exports.up = function (knex) {
     table.string("rating").notNullable();
     table.integer("quantity").notNullable();
     table.boolean("availability").notNullable();
-    table.string("image_filename").nullable();
     table.timestamps(true, true);
   });
 };
