@@ -28,8 +28,7 @@ A complete implementation of an audio equipment marketplace with:
 | Component                 | Technology   |
 | ------------------------- | ------------ |
 | Prototyping, Wireframe    | Figma        |
-| Lib                       | React.js     |
-| Framework                 | Vite         |
+| Framework / Lib           | React.js     |
 | Styling                   | Tailwind CSS |
 | Middleware / Optimization | Redux        |
 | Routing                   | React router |
