@@ -8,7 +8,6 @@
 A complete implementation of an audio equipment marketplace with:
 
 - Product catalog system
-- User interaction flows
 - Backend services architecture
 
 ## 🛠️ Technology Implementation
@@ -156,9 +155,9 @@ npm run dev           # Start the node server
 
 - product_id // id from product // UUID
 - price_per_unit // unit price // Float
-- total_price // unit price * quantity // Float
+- total_price // unit price \* quantity // Float
 - payment_method // PIX, DEBIT CARD or CREDIT CARD / String
-- quantity // number of products // Integer 
+- quantity // number of products // Integer
 
 ## 📊 Database Schema
 
@@ -192,7 +191,6 @@ MIT
 Implementação completa de um marketplace de equipamentos de áudio com:
 
 - Sistema de catálogo de produtos
-- Fluxos de interação do usuário
 - Arquitetura de serviços backend
 
 ## 🛠️ Implementação Tecnológica
@@ -340,9 +338,9 @@ npm run dev           # Inicia servidor Node
 
 - product_id // id do produto // UUID
 - price_per_unit // preço unitário // Float
-- total_price // preço unitário * quantidade // Float
+- total_price // preço unitário \* quantidade // Float
 - payment_method // PIX, DEBIT CARD ou CREDIT CARD / String
-- quantity // Número de produtos // Integer 
+- quantity // Número de produtos // Integer
 
 ## 📊 Diagrama
 
