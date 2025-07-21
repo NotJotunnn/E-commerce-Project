@@ -25,13 +25,11 @@ A complete implementation of an audio equipment marketplace with:
 
 ### Frontend Implementation
 
-| Component                 | Technology   |
-| ------------------------- | ------------ |
-| Prototyping, Wireframe    | Figma        |
-| Framework / Lib           | React.js     |
-| Styling                   | Tailwind CSS |
-| Middleware / Optimization | Redux        |
-| Routing                   | React router |
+| Component              | Technology   |
+| ---------------------- | ------------ |
+| Prototyping, Wireframe | Figma        |
+| Framework              | Next.js      |
+| Styling                | Tailwind CSS |
 
 ## 🚀 Technical Features
 
@@ -158,9 +156,9 @@ npm run dev           # Start the node server
 
 - product_id // id from product // UUID
 - price_per_unit // unit price // Float
-- total_price // unit price \* quantity // Float
+- total_price // unit price * quantity // Float
 - payment_method // PIX, DEBIT CARD or CREDIT CARD / String
-- quantity // number of products // Integer
+- quantity // number of products // Integer 
 
 ## 📊 Database Schema
 
@@ -169,18 +167,6 @@ npm run dev           # Start the node server
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Not completely implemented</p>
   <p style="width: 500px; font-style: italic; opacity: 50%; justify-self: center;">Diagram made in https://dbdiagram.io/d</p>
 </p>
-
-## User Flow
-
-## Wireframe
-
-## Design thinking
-
-### Color palette
-
-### Font (Later studies)
-
-### Style
 
 ## 📝 Developer Note
 
@@ -354,9 +340,9 @@ npm run dev           # Inicia servidor Node
 
 - product_id // id do produto // UUID
 - price_per_unit // preço unitário // Float
-- total_price // preço unitário \* quantidade // Float
+- total_price // preço unitário * quantidade // Float
 - payment_method // PIX, DEBIT CARD ou CREDIT CARD / String
-- quantity // Número de produtos // Integer
+- quantity // Número de produtos // Integer 
 
 ## 📊 Diagrama
 
